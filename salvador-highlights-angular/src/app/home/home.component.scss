@@ -9,3 +9,18 @@ footer {
     color: red;
     background-color: yellow;
 }
+
+.menu-principal {
+    .nav-link{
+        color: white;
+    }
+    .nav-link.active{
+        background-color: #92928f;
+    }
+    .nav-link:hover{
+        color: hsl(29, 83%, 39%);
+    }
+    .nav-link.active:hover{
+        color:white;
+    }
+}
