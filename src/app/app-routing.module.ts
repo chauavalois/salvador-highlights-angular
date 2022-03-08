@@ -5,13 +5,16 @@ import { NoticiasRegionaisComponent } from './noticias-regionais/noticias-region
 import { NoticiasNacionaisComponent } from './noticias-nacionais/noticias-nacionais.component';
 import { NoticiasInternacionaisComponent } from './noticias-internacionais/noticias-internacionais.component';
 import { ContatosComponent } from './contatos/contatos.component';
+import { CarrosComponent } from './carros/carros.component';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
   {path: 'noticias-regionais', component: NoticiasRegionaisComponent},
   {path: 'noticias-nacionais', component: NoticiasNacionaisComponent},
   {path: 'noticias-internacionais', component: NoticiasInternacionaisComponent},
-  {path: 'contatos', component: ContatosComponent}
+  {path: 'contatos', component: ContatosComponent},
+  {path: 'carros', component: CarrosComponent}
+
   
 ];
 

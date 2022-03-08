@@ -12,6 +12,10 @@ import { ContatosComponent } from './contatos/contatos.component';
 import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
+import { CarrosComponent } from './carros/carros.component';
+
 
 @NgModule({
   declarations: [
@@ -22,11 +26,14 @@ import { FooterComponent } from './footer/footer.component';
     ContatosComponent,
     HeaderComponent,
     FooterComponent,
+    CarrosComponent,
     ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HomeModule
+    HomeModule,
+    HttpClientModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
