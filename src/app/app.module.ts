@@ -14,8 +14,6 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
-import { CarrosComponent } from './carros/carros.component';
-
 
 @NgModule({
   declarations: [
@@ -26,7 +24,6 @@ import { CarrosComponent } from './carros/carros.component';
     ContatosComponent,
     HeaderComponent,
     FooterComponent,
-    CarrosComponent,
     ],
   imports: [
     BrowserModule,
