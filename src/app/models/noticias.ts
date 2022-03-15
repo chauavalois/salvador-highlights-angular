@@ -16,24 +16,9 @@ export interface Noticias {
                     deleted_at: null;
                     created_at: null;
                     updated_at: null;
-                    pivot: {
-                        noticia_int_id: number;
-                        noticiaTipo_int_id: number
-                    }
-                },
-                {
-                    noticiaTipo_int_id: number;
-                    noticiaTipo_txt_chave: string;
-                    noticiaTipo_txt_valor: string;
-                    noticiaTipo_bool_ativo: number;
-                    deleted_at: null;
-                    created_at: null;
-                    updated_at: null;
-                    pivot: {
-                        noticia_int_id: number;
-                        noticiaTipo_int_id: number
-                    }
+                    
                 }
+                
             ]
         }
 
