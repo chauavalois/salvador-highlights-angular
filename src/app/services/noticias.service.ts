@@ -2,14 +2,14 @@ import { Injectable } from '@angular/core';
 import { HttpClient, HttpErrorResponse, HttpHeaders } from '@angular/common/http';
 import { Observable, throwError } from 'rxjs';
 import { retry, catchError } from 'rxjs/operators';
-import { Noticias } from '../models/noticias';
+import { INoticia } from '../models/noticias';
 
 @Injectable({
   providedIn: 'root'
 })
 export class NoticiasService {
 
-  url = 'http://localhost:3000/cars'; // api rest fake
+  url = 'http://localhost:3000/noticias'; // api rest fake
 
   // injetando o HttpClient
   constructor(private httpClient: HttpClient) { }
@@ -19,44 +19,44 @@ export class NoticiasService {
     headers: new HttpHeaders({ 'Content-Type': 'application/json' })
   }
 
-  // Obtem todos os carros
-  getCars(): Observable<Noticias[]> {
-    return this.httpClient.get<Noticias[]>(this.url)
+  // Obtem todas as notícias
+  getNoticias(): Observable<INoticia[]> {
+    return this.httpClient.get<INoticia[]>(this.url)
       .pipe(
         retry(2),
         catchError(this.handleError))
   }
 
-  // Obtem um carro pelo id
-  getCarById(id: number): Observable<Noticias> {
-    return this.httpClient.get<Car>(this.url + '/' + id)
+  // Obtem uma notícia pelo id
+  getNoticiaById(id: number): Observable<INoticia> {
+    return this.httpClient.get<INoticia>(this.url + '/' + id)
       .pipe(
         retry(2),
         catchError(this.handleError)
       )
   }
 
-  // salva um carro
-  saveCar(car: Car): Observable<Car> {
-    return this.httpClient.post<Car>(this.url, JSON.stringify(car), this.httpOptions)
+  // salva uma noticia
+  saveNoticia(noticia: INoticia): Observable<INoticia> {
+    return this.httpClient.post<INoticia>(this.url, JSON.stringify(noticia), this.httpOptions)
       .pipe(
         retry(2),
         catchError(this.handleError)
       )
   }
 
-  // utualiza um carro
-  updateCar(car: Car): Observable<Car> {
-    return this.httpClient.put<Car>(this.url + '/' + car.id, JSON.stringify(car), this.httpOptions)
+  // utualiza uma notícia
+  updateNoticia(noticia: INoticia): Observable<INoticia> {
+    return this.httpClient.put<INoticia>(this.url + '/' + noticia.noticia_int_id, JSON.stringify(noticia), this.httpOptions)
       .pipe(
         retry(1),
         catchError(this.handleError)
       )
   }
 
-  // deleta um carro
-  deleteCar(car: Car) {
-    return this.httpClient.delete<Car>(this.url + '/' + car.id, this.httpOptions)
+  // deleta uma notícia
+  deleteNoticia(noticia: INoticia) {
+    return this.httpClient.delete<INoticia>(this.url + '/' + noticia.noticia_int_id, this.httpOptions)
       .pipe(
         retry(1),
         catchError(this.handleError)
