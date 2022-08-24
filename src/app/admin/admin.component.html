@@ -1,6 +1,7 @@
-<nav aria-label="breadcrumb">
+
+<!--<nav aria-label="breadcrumb">
     <ol class="breadcrumb">
-      <li class="breadcrumb-item active" aria-current="page">Gerenciamento de carros</li>
+      <li class="breadcrumb-item active" aria-current="page">Gerenciamento de noticias</li>
     </ol>
   </nav>
   <div class="container">
@@ -18,14 +19,14 @@
               </tr>
             </thead>
             <tbody>
-              <tr *ngFor="let noticia of noticia">
-                <td>{{car.id}}</td>
-                <td>{{car.model}}</td>
-                <td>{{car.color}}</td>
-                <td>{{car.price | currency}}</td>
+              <tr *ngFor="let noticia of INoticias">
+                <td>{{noticia.id}}</td>
+                <td>{{noticia.model}}</td>
+                <td>{{noticia.color}}</td>
+                <td>{{noticia.price | currency}}</td>
                 <td>
-                  <button type="button" class="btn btn-warning btn-sm" (click)="updateNoticia(noticias)">Editar</button>
-                  <button type="button" class="btn btn-danger btn-sm ml-1" (click)="deleteCar(car)">Deletar</button>
+                  <button type="button" class="btn btn-warning btn-sm" (click)="updateNoticia(noticia)">Editar</button>
+                  <button type="button" class="btn btn-danger btn-sm ml-1" (click)="deleteNoticia(noticia)">Deletar</button>
                 </td>
               </tr>
             </tbody>
@@ -34,19 +35,19 @@
     </div>
   
     <div class="card add-car">
-        <h5 class="card-header">Adicionar/Atualizar carro</h5>
+        <h5 class="card-header">Adicionar/Atualizar noticia</h5>
         <div class="card-body">
-            <form id="add-form" (ngSubmit)="f.form.valid && saveCar(f)" #f="ngForm" novalidate>
+            <form id="add-form" (ngSubmit)="f.form.valid && saveNoticia(f)" #f="ngForm" novalidate>
               <div class="form-group">
                   <label for="model">Modelo</label>
-                  <input type="text" [(ngModel)]="car.model" id="model" name="model" #model="ngModel" required class="form-control" [ngClass]="{ 'is-invalid': f.submitted && model.invalid }" placeholder="Digite o modelo">
+                  <input type="text" [(ngModel)]="noticia.model" id="model" name="model" #model="ngModel" required class="form-control" [ngClass]="{ 'is-invalid': f.submitted && model.invalid }" placeholder="Digite o modelo">
                   <div *ngIf="f.submitted && model.invalid" class="invalid-feedback">
                       <div *ngIf="model.errors.required">Modelo é obrigatório</div>
                   </div>
               </div>
               <div class="form-group">
                   <label for="color">Cor</label>
-                  <input type="text" [(ngModel)]="car.color" id="color" name="color" #color="ngModel" required class="form-control" [ngClass]="{ 'is-invalid': f.submitted && color.invalid }" placeholder="Digite a cor">
+                  <input type="text" [(ngModel)]="noticia.color" id="color" name="color" #color="ngModel" required class="form-control" [ngClass]="{ 'is-invalid': f.submitted && color.invalid }" placeholder="Digite a cor">
                   <div *ngIf="f.submitted && color.invalid" class="invalid-feedback">
                       <div *ngIf="color.errors.required">Cor é obrigatória</div>
                   </div>
@@ -63,4 +64,4 @@
             </form>
         </div>
       </div>
-  </div>
+  </div>-->

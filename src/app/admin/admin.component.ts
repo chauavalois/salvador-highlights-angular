@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+/* import { Component, OnInit } from '@angular/core';
 import { INoticia } from '../models/noticias';
 
 @Component({
@@ -13,4 +13,4 @@ export class AdminComponent implements OnInit {
   ngOnInit(): void {
   }
 
-}
+ */
