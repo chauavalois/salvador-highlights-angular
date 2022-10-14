@@ -14,8 +14,8 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
-/* import { AdminComponent } from './admin/admin.component';
- */
+import { AdminComponent } from './admin/admin.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,8 +24,8 @@ import { FormsModule } from '@angular/forms';
     NoticiasInternacionaisComponent,
     ContatosComponent,
     HeaderComponent,
-    FooterComponent
-    /*AdminComponent,*/
+    FooterComponent,
+    AdminComponent,
     ],
   imports: [
     BrowserModule,

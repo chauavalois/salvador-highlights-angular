@@ -9,7 +9,7 @@ import { INoticia } from '../models/noticias';
 })
 export class NoticiasService {
 
-  url = 'http://localhost:3000/noticias'; // api rest fake
+  url = 'http://localhost:3000/noticias'; // local da api rest fake
 
   // injetando o HttpClient
   constructor(private httpClient: HttpClient) { }
@@ -19,15 +19,15 @@ export class NoticiasService {
     headers: new HttpHeaders({ 'Content-Type': 'application/json' })
   }
 
-  // Obtem todas as notícias
-  getNoticias(): Observable<INoticia[]> {
+  // Obter todas as notícias
+  getAllNoticias(): Observable<INoticia[]> {
     return this.httpClient.get<INoticia[]>(this.url)
       .pipe(
         retry(2),
         catchError(this.handleError))
   }
 
-  // Obtem uma notícia pelo id
+  // Obter uma notícia pelo id
   getNoticiaById(id: number): Observable<INoticia> {
     return this.httpClient.get<INoticia>(this.url + '/' + id)
       .pipe(
@@ -36,7 +36,7 @@ export class NoticiasService {
       )
   }
 
-  // salva uma noticia
+  // salvar uma noticia
   saveNoticia(noticia: INoticia): Observable<INoticia> {
     return this.httpClient.post<INoticia>(this.url, JSON.stringify(noticia), this.httpOptions)
       .pipe(
@@ -45,7 +45,7 @@ export class NoticiasService {
       )
   }
 
-  // utualiza uma notícia
+  // utualizar uma notícia
   updateNoticia(noticia: INoticia): Observable<INoticia> {
     return this.httpClient.put<INoticia>(this.url + '/' + noticia.noticia_int_id, JSON.stringify(noticia), this.httpOptions)
       .pipe(
@@ -54,7 +54,7 @@ export class NoticiasService {
       )
   }
 
-  // deleta uma notícia
+  // deletar uma notícia
   deleteNoticia(noticia: INoticia) {
     return this.httpClient.delete<INoticia>(this.url + '/' + noticia.noticia_int_id, this.httpOptions)
       .pipe(

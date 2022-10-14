@@ -1,3 +1,4 @@
+import { AdminComponent } from './admin/admin.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
@@ -11,7 +12,8 @@ const routes: Routes = [
   {path: 'noticias-regionais', component: NoticiasRegionaisComponent},
   {path: 'noticias-nacionais', component: NoticiasNacionaisComponent},
   {path: 'noticias-internacionais', component: NoticiasInternacionaisComponent},
-  {path: 'contatos', component: ContatosComponent},  
+  {path: 'contatos', component: ContatosComponent},
+  {path: 'admin', component: AdminComponent},
 ];
 
 @NgModule({
