@@ -6,6 +6,8 @@ import { NoticiasRegionaisComponent } from './noticias-regionais/noticias-region
 import { NoticiasNacionaisComponent } from './noticias-nacionais/noticias-nacionais.component';
 import { NoticiasInternacionaisComponent } from './noticias-internacionais/noticias-internacionais.component';
 import { ContatosComponent } from './contatos/contatos.component';
+import { EditarNoticiaComponent } from './admin/editar-noticia/editar-noticia.component';
+import { CriarNoticiaComponent } from './admin/criar-noticia/criar-noticia.component';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
@@ -14,6 +16,9 @@ const routes: Routes = [
   {path: 'noticias-internacionais', component: NoticiasInternacionaisComponent},
   {path: 'contatos', component: ContatosComponent},
   {path: 'admin', component: AdminComponent},
+  {path: 'criar-noticia', component: CriarNoticiaComponent},
+  {path: 'editar-noticia', component: EditarNoticiaComponent},
+
 ];
 
 @NgModule({

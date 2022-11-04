@@ -15,6 +15,8 @@ import { FooterComponent } from './footer/footer.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { AdminComponent } from './admin/admin.component';
+import { CriarNoticiaComponent } from './admin/criar-noticia/criar-noticia.component';
+import { EditarNoticiaComponent } from './admin/editar-noticia/editar-noticia.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +28,8 @@ import { AdminComponent } from './admin/admin.component';
     HeaderComponent,
     FooterComponent,
     AdminComponent,
+    CriarNoticiaComponent,
+    EditarNoticiaComponent,
     ],
   imports: [
     BrowserModule,

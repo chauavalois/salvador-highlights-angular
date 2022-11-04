@@ -9,7 +9,7 @@
   </div>
   <div class="row">
     <div class="col-md-6">
-      <button type="button" class="btn btn-primary float-right">Criar Notícia</button>
+      <a routerLink="/criar-noticia"><button type="button" class="btn btn-primary float-right" routerLink="/criar-noticia">Criar Notícia</button></a>
     </div>
   </div>
   <div class="row">
@@ -41,7 +41,7 @@
             <td>{{noticia.noticia_bool_ativo}}</td>
             <td>{{noticia.noticia_tipos}}</td>
             <td>
-              <button class="btn btn-primary mr-2">Ver mais ou editar</button>
+              <a routerLink="/editar-noticia"><button class="btn btn-primary mr-2">Ver mais ou editar</button></a>
               <button class="btn btn-danger">Excluir</button>
             </td>
           </tr>
