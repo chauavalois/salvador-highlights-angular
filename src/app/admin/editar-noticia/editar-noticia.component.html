@@ -1,1 +1,44 @@
-<p>editar-noticia works!</p>
+<div class="corpo">
+    <div class="container">
+      <form class="formulario" action="">
+        <p>Preencha todos os campos para editar uma notícia:</p>
+        <div class="campo">
+          <label>Titulo: </label>
+          <input type="text" [(ngModel)]="editarNoticia.noticia_txt_titulo">
+        </div>
+        <div class="campo">
+          <label for="">Texto: </label>
+          <textarea [(ngModel)]="editarNoticia.noticia_txt_texto"></textarea>
+        </div>
+        <div class="campo">
+          <label>Imagem: </label>
+          <input type="text" [(ngModel)]="editarNoticia.noticia_txt_foto">
+        </div>
+        <!-- <div class="campo">
+      <label></label>
+      <input type="text" [(ngModel)]="criarNoticia.created_at">
+    </div>
+    <div class="campo">
+      <label></label>
+      <input type="text" [(ngModel)]="criarNoticia.updated_at">
+    </div>
+    <div class="campo">
+      <label></label>
+      <input type="text" [(ngModel)]="criarNoticia.deleted_at">
+    </div>
+    <div class="campo">
+      <label></label>
+      <input type="text" [(ngModel)]="criarNoticia.noticia_bool_ativo">
+    </div> -->
+        <div class="campo">
+          <label>Tipo: </label>
+          <input type="text" [(ngModel)]="editarNoticia.noticia_tipos">
+        </div>
+        <div class="campo">
+          <input type="button" name="Cancelar" value="Cancelar" class="btn btn-danger">
+          <input type="submit" name="Salvar" value="Salvar" class="btn btn-primary">
+        </div>
+  
+      </form>
+    </div>
+  </div>
