@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+
 import { INoticia } from 'src/app/models/noticias';
+import { NoticiasService } from 'src/app/services/noticias.service';
 
 @Component({
   selector: 'app-editar-noticia',
@@ -8,7 +10,7 @@ import { INoticia } from 'src/app/models/noticias';
 })
 export class EditarNoticiaComponent implements OnInit {
 
-  constructor() { }
+  constructor(private NoticiasService: NoticiasService) { }
 
   public editarNoticia: INoticia = {
     noticia_int_id: 0,
@@ -33,6 +35,18 @@ export class EditarNoticiaComponent implements OnInit {
 
     ]
 };
+salvar(noticia:INoticia) {
+  this.NoticiasService.salvarNoticia(noticia).subscribe({
+    next: () =>{
+      alert('Noticia salva com sucesso');
+      // this.getNoticias();
+      // this.criarNoticia = new INoticia();
+    },
+    error: () => {
+      alert('Erro ao tentar salvar')
+    }
+  })
+}
 
   ngOnInit(): void {
   }

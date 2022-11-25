@@ -13,9 +13,11 @@ export class AdminComponent implements OnInit {
     noticia = {} as INoticia
     noticias!: INoticia[];
 
+
   constructor(private noticiasService: NoticiasService) { }
 
   public listaNoticias: INoticia[] = []
+  public armazenadorNoticia: INoticia[] = []
 
   ngOnInit(): void {
     this.getNoticias();
@@ -45,12 +47,20 @@ export class AdminComponent implements OnInit {
 // }
 //  
 
-//  //Deletar um carro
-//  deleteNoticia(noticia: INoticia) {
-//   this.noticiasService.deleteNoticia(noticia).subscribe(() => {
-//     this.getNoticias();
-//   });
-//  }
+//  Deletar um carro
+excluirNoticia(noticiaId: number) {
+  if (confirm('Tem certeza que deseja excluir a notícia?')) {
+    this.noticiasService.excluir(noticiaId).subscribe({
+      next: () => {
+        alert('Excluído com sucesso');
+        this.getNoticias();
+      },
+      error: () => {
+        alert('Erro ao tentar excluir');
+      }
+    });
+  }
+}
 
 //  //Copia o carro para ser editado
 //  editNoticia(noticia: INoticia) {

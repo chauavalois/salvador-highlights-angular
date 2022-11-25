@@ -4,7 +4,7 @@
       <h2>
         Administração Salvador Highlights
       </h2>
-      <small class="text mutted">Criar, buscar, atualizar e deletar notícias</small>
+      <!-- <small class="text mutted">Criar, buscar, atualizar e deletar notícias</small> -->
     </div>
   </div>
   <div class="row">
@@ -41,8 +41,8 @@
             <td>{{noticia.noticia_bool_ativo}}</td>
             <td>{{noticia.noticia_tipos}}</td>
             <td>
-              <a routerLink="/editar-noticia"><button class="btn btn-primary mr-2">Ver mais ou editar</button></a>
-              <button class="btn btn-danger">Excluir</button>
+              <a routerLink="/editar-noticia"><button class="btn btn-primary mr-2">Editar</button></a>
+              <button (click)="excluirNoticia(noticia.noticia_int_id)" class="btn btn-danger">Excluir</button>
             </td>
           </tr>
         </tbody>

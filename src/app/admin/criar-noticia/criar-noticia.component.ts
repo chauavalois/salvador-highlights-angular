@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { FormGroup, FormsModule, ReactiveFormsModule } from '@angular/forms';
+
 import { INoticia } from 'src/app/models/noticias';
+import { NoticiasService } from 'src/app/services/noticias.service';
 
 @Component({
   selector: 'app-criar-noticia',
@@ -8,7 +11,7 @@ import { INoticia } from 'src/app/models/noticias';
 })
 export class CriarNoticiaComponent implements OnInit {
 
-  constructor() { }
+  constructor(private NoticiasService: NoticiasService) { }
 
   public criarNoticia: INoticia = {
     noticia_int_id: 0,
@@ -36,5 +39,19 @@ export class CriarNoticiaComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
+  salvar(noticia:INoticia) {
+    this.NoticiasService.salvarNoticia(noticia).subscribe({
+      next: () =>{
+        alert('Noticia salva com sucesso');
+        // this.getNoticias();
+        // this.criarNoticia = new INoticia();
+      },
+      error: () => {
+        alert('Erro ao tentar salvar')
+      }
+    })
+  }
+ 
 
 }

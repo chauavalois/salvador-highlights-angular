@@ -1,767 +1,767 @@
 {
   "noticias": [
-      {
-          "noticia_int_id": 121,
-          "noticia_txt_titulo": "Consectetur.",
-          "noticia_txt_texto": "Minima earum sint accusamus quaerat. Explicabo aut ad est et perferendis quos mollitia dolorem. Delectus amet quasi repudiandae quas aspernatur. Voluptatem inventore dolores culpa numquam nihil. Est sed et molestias architecto consequatur amet. Et voluptate architecto quo vel qui rerum ratione. Beatae qui ullam nobis placeat impedit. Totam hic dolorum aliquid qui. Reiciendis quaerat vitae nesciunt nulla provident totam. Similique minus ea earum modi dolores natus et ullam.",
-          "noticia_txt_foto": "https://placeimg.com/100/100/any?38",
-          "created_at": "2022-03-06T22:41:35.000000Z",
-          "updated_at": "2022-03-06T22:41:35.000000Z",
+    {
+      "noticia_int_id": 121,
+      "noticia_txt_titulo": "Consectetur.",
+      "noticia_txt_texto": "Minima earum sint accusamus quaerat. Explicabo aut ad est et perferendis quos mollitia dolorem. Delectus amet quasi repudiandae quas aspernatur. Voluptatem inventore dolores culpa numquam nihil. Est sed et molestias architecto consequatur amet. Et voluptate architecto quo vel qui rerum ratione. Beatae qui ullam nobis placeat impedit. Totam hic dolorum aliquid qui. Reiciendis quaerat vitae nesciunt nulla provident totam. Similique minus ea earum modi dolores natus et ullam.",
+      "noticia_txt_foto": "https://placeimg.com/100/100/any?38",
+      "created_at": "2022-03-06T22:41:35.000000Z",
+      "updated_at": "2022-03-06T22:41:35.000000Z",
+      "deleted_at": null,
+      "noticia_bool_ativo": 1,
+      "noticia_tipos": [
+        {
+          "noticiaTipo_int_id": 43,
+          "noticiaTipo_txt_chave": "regional",
+          "noticiaTipo_txt_valor": "Notícias Regionais",
+          "noticiaTipo_bool_ativo": 1,
           "deleted_at": null,
-          "noticia_bool_ativo": 1,
-          "noticia_tipos": [
-              {
-                  "noticiaTipo_int_id": 43,
-                  "noticiaTipo_txt_chave": "regional",
-                  "noticiaTipo_txt_valor": "Notícias Regionais",
-                  "noticiaTipo_bool_ativo": 1,
-                  "deleted_at": null,
-                  "created_at": null,
-                  "updated_at": null,
-                  "pivot": {
-                      "noticia_int_id": 121,
-                      "noticiaTipo_int_id": 43
-                  }
-              },
-              {
-                  "noticiaTipo_int_id": 44,
-                  "noticiaTipo_txt_chave": "nacional",
-                  "noticiaTipo_txt_valor": "Notícias Nacionais",
-                  "noticiaTipo_bool_ativo": 1,
-                  "deleted_at": null,
-                  "created_at": null,
-                  "updated_at": null,
-                  "pivot": {
-                      "noticia_int_id": 121,
-                      "noticiaTipo_int_id": 44
-                  }
-              }
-          ]
-      },
-      {
-          "noticia_int_id": 122,
-          "noticia_txt_titulo": "Adipisci earum et.",
-          "noticia_txt_texto": "Aut fugit consequatur incidunt minus quo quia enim quia. Quia numquam ad inventore accusantium. Dolorem voluptatibus velit qui esse. Explicabo amet aliquid adipisci rerum. Voluptates et commodi non omnis necessitatibus alias. Repudiandae qui aut eligendi. Fugiat qui deserunt neque et. Exercitationem qui minima commodi. Est dolore delectus repudiandae molestias qui vel maxime fugiat. Aut aut voluptatibus deserunt nulla labore aperiam et.",
-          "noticia_txt_foto": "https://placeimg.com/100/100/any?60",
-          "created_at": "2022-03-06T22:41:35.000000Z",
-          "updated_at": "2022-03-06T22:41:35.000000Z",
+          "created_at": null,
+          "updated_at": null,
+          "pivot": {
+            "noticia_int_id": 121,
+            "noticiaTipo_int_id": 43
+          }
+        },
+        {
+          "noticiaTipo_int_id": 44,
+          "noticiaTipo_txt_chave": "nacional",
+          "noticiaTipo_txt_valor": "Notícias Nacionais",
+          "noticiaTipo_bool_ativo": 1,
           "deleted_at": null,
-          "noticia_bool_ativo": 1,
-          "noticia_tipos": [
-              {
-                  "noticiaTipo_int_id": 45,
-                  "noticiaTipo_txt_chave": "internacional",
-                  "noticiaTipo_txt_valor": "Notícias Internacionais",
-                  "noticiaTipo_bool_ativo": 1,
-                  "deleted_at": null,
-                  "created_at": null,
-                  "updated_at": null,
-                  "pivot": {
-                      "noticia_int_id": 122,
-                      "noticiaTipo_int_id": 45
-                  }
-              }
-          ]
-      },
-      {
-          "noticia_int_id": 123,
-          "noticia_txt_titulo": "Reprehenderit.",
-          "noticia_txt_texto": "Porro officiis architecto natus magni ea dicta ducimus. Culpa itaque odit in alias. Voluptatem ex facere omnis quia vitae facere accusamus. Dolorem quibusdam molestiae inventore animi consequatur sint velit doloribus. Rerum dolorem reiciendis assumenda aperiam provident optio. Consequuntur quia nostrum ab odit sed tempora voluptas. Doloremque dolorem repellat quia placeat. Occaecati delectus saepe et doloremque ipsam eum. Quis velit tenetur in nihil.",
-          "noticia_txt_foto": "https://placeimg.com/100/100/any?51",
-          "created_at": "2022-03-06T22:41:35.000000Z",
-          "updated_at": "2022-03-06T22:41:35.000000Z",
+          "created_at": null,
+          "updated_at": null,
+          "pivot": {
+            "noticia_int_id": 121,
+            "noticiaTipo_int_id": 44
+          }
+        }
+      ]
+    },
+    {
+      "noticia_int_id": 122,
+      "noticia_txt_titulo": "Adipisci earum et.",
+      "noticia_txt_texto": "Aut fugit consequatur incidunt minus quo quia enim quia. Quia numquam ad inventore accusantium. Dolorem voluptatibus velit qui esse. Explicabo amet aliquid adipisci rerum. Voluptates et commodi non omnis necessitatibus alias. Repudiandae qui aut eligendi. Fugiat qui deserunt neque et. Exercitationem qui minima commodi. Est dolore delectus repudiandae molestias qui vel maxime fugiat. Aut aut voluptatibus deserunt nulla labore aperiam et.",
+      "noticia_txt_foto": "https://placeimg.com/100/100/any?60",
+      "created_at": "2022-03-06T22:41:35.000000Z",
+      "updated_at": "2022-03-06T22:41:35.000000Z",
+      "deleted_at": null,
+      "noticia_bool_ativo": 1,
+      "noticia_tipos": [
+        {
+          "noticiaTipo_int_id": 45,
+          "noticiaTipo_txt_chave": "internacional",
+          "noticiaTipo_txt_valor": "Notícias Internacionais",
+          "noticiaTipo_bool_ativo": 1,
           "deleted_at": null,
-          "noticia_bool_ativo": 1,
-          "noticia_tipos": [
-              {
-                  "noticiaTipo_int_id": 45,
-                  "noticiaTipo_txt_chave": "internacional",
-                  "noticiaTipo_txt_valor": "Notícias Internacionais",
-                  "noticiaTipo_bool_ativo": 1,
-                  "deleted_at": null,
-                  "created_at": null,
-                  "updated_at": null,
-                  "pivot": {
-                      "noticia_int_id": 123,
-                      "noticiaTipo_int_id": 45
-                  }
-              }
-          ]
-      },
-      {
-          "noticia_int_id": 124,
-          "noticia_txt_titulo": "Voluptas aut est.",
-          "noticia_txt_texto": "Sequi omnis iure porro atque similique quaerat omnis. Officia voluptatem aut est cum error perferendis aut. Ut quaerat voluptas numquam aliquam ullam quis et accusamus. Quisquam nulla vero explicabo qui at sed. Impedit sit autem quisquam beatae ea ratione ea. Aperiam architecto occaecati et explicabo iure earum. Officiis error consectetur velit commodi in maxime et. Deleniti eum id nihil magnam.",
-          "noticia_txt_foto": "https://placeimg.com/100/100/any?30",
-          "created_at": "2022-03-06T22:41:35.000000Z",
-          "updated_at": "2022-03-06T22:41:35.000000Z",
+          "created_at": null,
+          "updated_at": null,
+          "pivot": {
+            "noticia_int_id": 122,
+            "noticiaTipo_int_id": 45
+          }
+        }
+      ]
+    },
+    {
+      "noticia_int_id": 123,
+      "noticia_txt_titulo": "Reprehenderit.",
+      "noticia_txt_texto": "Porro officiis architecto natus magni ea dicta ducimus. Culpa itaque odit in alias. Voluptatem ex facere omnis quia vitae facere accusamus. Dolorem quibusdam molestiae inventore animi consequatur sint velit doloribus. Rerum dolorem reiciendis assumenda aperiam provident optio. Consequuntur quia nostrum ab odit sed tempora voluptas. Doloremque dolorem repellat quia placeat. Occaecati delectus saepe et doloremque ipsam eum. Quis velit tenetur in nihil.",
+      "noticia_txt_foto": "https://placeimg.com/100/100/any?51",
+      "created_at": "2022-03-06T22:41:35.000000Z",
+      "updated_at": "2022-03-06T22:41:35.000000Z",
+      "deleted_at": null,
+      "noticia_bool_ativo": 1,
+      "noticia_tipos": [
+        {
+          "noticiaTipo_int_id": 45,
+          "noticiaTipo_txt_chave": "internacional",
+          "noticiaTipo_txt_valor": "Notícias Internacionais",
+          "noticiaTipo_bool_ativo": 1,
           "deleted_at": null,
-          "noticia_bool_ativo": 1,
-          "noticia_tipos": [
-              {
-                  "noticiaTipo_int_id": 43,
-                  "noticiaTipo_txt_chave": "regional",
-                  "noticiaTipo_txt_valor": "Notícias Regionais",
-                  "noticiaTipo_bool_ativo": 1,
-                  "deleted_at": null,
-                  "created_at": null,
-                  "updated_at": null,
-                  "pivot": {
-                      "noticia_int_id": 124,
-                      "noticiaTipo_int_id": 43
-                  }
-              }
-          ]
-      },
-      {
-          "noticia_int_id": 125,
-          "noticia_txt_titulo": "Distinctio minima.",
-          "noticia_txt_texto": "Sint quia dignissimos et rerum. Aliquid debitis quaerat molestiae tempora aut omnis expedita quibusdam. Inventore qui quidem eum omnis quaerat nulla numquam. Aspernatur molestiae et fuga qui. Repudiandae cum sint aperiam nam et laudantium. Ullam omnis aut rerum corrupti exercitationem. Accusamus ut dolor exercitationem assumenda. Exercitationem et debitis corrupti inventore non iure ea. Voluptatem fugit sit quia laudantium. Delectus eligendi omnis quas at.",
-          "noticia_txt_foto": "https://placeimg.com/100/100/any?14",
-          "created_at": "2022-03-06T22:41:35.000000Z",
-          "updated_at": "2022-03-06T22:41:35.000000Z",
+          "created_at": null,
+          "updated_at": null,
+          "pivot": {
+            "noticia_int_id": 123,
+            "noticiaTipo_int_id": 45
+          }
+        }
+      ]
+    },
+    {
+      "noticia_int_id": 124,
+      "noticia_txt_titulo": "Voluptas aut est.",
+      "noticia_txt_texto": "Sequi omnis iure porro atque similique quaerat omnis. Officia voluptatem aut est cum error perferendis aut. Ut quaerat voluptas numquam aliquam ullam quis et accusamus. Quisquam nulla vero explicabo qui at sed. Impedit sit autem quisquam beatae ea ratione ea. Aperiam architecto occaecati et explicabo iure earum. Officiis error consectetur velit commodi in maxime et. Deleniti eum id nihil magnam.",
+      "noticia_txt_foto": "https://placeimg.com/100/100/any?30",
+      "created_at": "2022-03-06T22:41:35.000000Z",
+      "updated_at": "2022-03-06T22:41:35.000000Z",
+      "deleted_at": null,
+      "noticia_bool_ativo": 1,
+      "noticia_tipos": [
+        {
+          "noticiaTipo_int_id": 43,
+          "noticiaTipo_txt_chave": "regional",
+          "noticiaTipo_txt_valor": "Notícias Regionais",
+          "noticiaTipo_bool_ativo": 1,
           "deleted_at": null,
-          "noticia_bool_ativo": 1,
-          "noticia_tipos": [
-              {
-                  "noticiaTipo_int_id": 45,
-                  "noticiaTipo_txt_chave": "internacional",
-                  "noticiaTipo_txt_valor": "Notícias Internacionais",
-                  "noticiaTipo_bool_ativo": 1,
-                  "deleted_at": null,
-                  "created_at": null,
-                  "updated_at": null,
-                  "pivot": {
-                      "noticia_int_id": 125,
-                      "noticiaTipo_int_id": 45
-                  }
-              }
-          ]
-      },
-      {
-          "noticia_int_id": 126,
-          "noticia_txt_titulo": "In illo eligendi.",
-          "noticia_txt_texto": "Natus et ad quos et aliquid rerum ut. Rerum et illo alias voluptas illo. Cumque corrupti dolorem nemo voluptatibus est. Dolore cupiditate est molestias non repellendus voluptates repellendus. Molestiae iusto sint et ipsum et at. Ut molestiae quia inventore alias rerum. Illum ullam dolores temporibus maxime ut aut temporibus. Quis quam id placeat labore. Quia doloremque magnam eligendi aperiam ut.",
-          "noticia_txt_foto": "https://placeimg.com/100/100/any?65",
-          "created_at": "2022-03-06T22:41:35.000000Z",
-          "updated_at": "2022-03-06T22:41:35.000000Z",
+          "created_at": null,
+          "updated_at": null,
+          "pivot": {
+            "noticia_int_id": 124,
+            "noticiaTipo_int_id": 43
+          }
+        }
+      ]
+    },
+    {
+      "noticia_int_id": 125,
+      "noticia_txt_titulo": "Distinctio minima.",
+      "noticia_txt_texto": "Sint quia dignissimos et rerum. Aliquid debitis quaerat molestiae tempora aut omnis expedita quibusdam. Inventore qui quidem eum omnis quaerat nulla numquam. Aspernatur molestiae et fuga qui. Repudiandae cum sint aperiam nam et laudantium. Ullam omnis aut rerum corrupti exercitationem. Accusamus ut dolor exercitationem assumenda. Exercitationem et debitis corrupti inventore non iure ea. Voluptatem fugit sit quia laudantium. Delectus eligendi omnis quas at.",
+      "noticia_txt_foto": "https://placeimg.com/100/100/any?14",
+      "created_at": "2022-03-06T22:41:35.000000Z",
+      "updated_at": "2022-03-06T22:41:35.000000Z",
+      "deleted_at": null,
+      "noticia_bool_ativo": 1,
+      "noticia_tipos": [
+        {
+          "noticiaTipo_int_id": 45,
+          "noticiaTipo_txt_chave": "internacional",
+          "noticiaTipo_txt_valor": "Notícias Internacionais",
+          "noticiaTipo_bool_ativo": 1,
           "deleted_at": null,
-          "noticia_bool_ativo": 1,
-          "noticia_tipos": [
-              {
-                  "noticiaTipo_int_id": 44,
-                  "noticiaTipo_txt_chave": "nacional",
-                  "noticiaTipo_txt_valor": "Notícias Nacionais",
-                  "noticiaTipo_bool_ativo": 1,
-                  "deleted_at": null,
-                  "created_at": null,
-                  "updated_at": null,
-                  "pivot": {
-                      "noticia_int_id": 126,
-                      "noticiaTipo_int_id": 44
-                  }
-              }
-          ]
-      },
-      {
-          "noticia_int_id": 127,
-          "noticia_txt_titulo": "In quibusdam.",
-          "noticia_txt_texto": "Perferendis unde corrupti perferendis est laborum fugit facilis. Fuga et aperiam ipsum excepturi molestias mollitia. Odit rerum nihil velit eos non natus. Nihil est reprehenderit voluptatem eum suscipit. Cumque deleniti ea aut aut. Molestias voluptatem possimus quam. Rem exercitationem debitis ut omnis. Recusandae veritatis suscipit aut. Nesciunt sit asperiores odit architecto molestiae. Iure consequatur nisi repudiandae ullam excepturi.",
-          "noticia_txt_foto": "https://placeimg.com/100/100/any?77",
-          "created_at": "2022-03-06T22:41:35.000000Z",
-          "updated_at": "2022-03-06T22:41:35.000000Z",
+          "created_at": null,
+          "updated_at": null,
+          "pivot": {
+            "noticia_int_id": 125,
+            "noticiaTipo_int_id": 45
+          }
+        }
+      ]
+    },
+    {
+      "noticia_int_id": 126,
+      "noticia_txt_titulo": "In illo eligendi.",
+      "noticia_txt_texto": "Natus et ad quos et aliquid rerum ut. Rerum et illo alias voluptas illo. Cumque corrupti dolorem nemo voluptatibus est. Dolore cupiditate est molestias non repellendus voluptates repellendus. Molestiae iusto sint et ipsum et at. Ut molestiae quia inventore alias rerum. Illum ullam dolores temporibus maxime ut aut temporibus. Quis quam id placeat labore. Quia doloremque magnam eligendi aperiam ut.",
+      "noticia_txt_foto": "https://placeimg.com/100/100/any?65",
+      "created_at": "2022-03-06T22:41:35.000000Z",
+      "updated_at": "2022-03-06T22:41:35.000000Z",
+      "deleted_at": null,
+      "noticia_bool_ativo": 1,
+      "noticia_tipos": [
+        {
+          "noticiaTipo_int_id": 44,
+          "noticiaTipo_txt_chave": "nacional",
+          "noticiaTipo_txt_valor": "Notícias Nacionais",
+          "noticiaTipo_bool_ativo": 1,
           "deleted_at": null,
-          "noticia_bool_ativo": 1,
-          "noticia_tipos": [
-              {
-                  "noticiaTipo_int_id": 43,
-                  "noticiaTipo_txt_chave": "regional",
-                  "noticiaTipo_txt_valor": "Notícias Regionais",
-                  "noticiaTipo_bool_ativo": 1,
-                  "deleted_at": null,
-                  "created_at": null,
-                  "updated_at": null,
-                  "pivot": {
-                      "noticia_int_id": 127,
-                      "noticiaTipo_int_id": 43
-                  }
-              }
-          ]
-      },
-      {
-          "noticia_int_id": 128,
-          "noticia_txt_titulo": "Commodi animi culpa.",
-          "noticia_txt_texto": "Tempora eum repudiandae similique officia facilis repellendus. Optio officia ducimus pariatur et. Debitis magnam sit tenetur nobis recusandae in placeat odit. Perferendis sit pariatur ullam qui optio praesentium et. Eveniet expedita nesciunt necessitatibus modi modi. Pariatur laboriosam dicta voluptate inventore saepe. Fuga omnis quo iste accusantium.",
-          "noticia_txt_foto": "https://placeimg.com/100/100/any?6",
-          "created_at": "2022-03-06T22:41:35.000000Z",
-          "updated_at": "2022-03-06T22:41:35.000000Z",
+          "created_at": null,
+          "updated_at": null,
+          "pivot": {
+            "noticia_int_id": 126,
+            "noticiaTipo_int_id": 44
+          }
+        }
+      ]
+    },
+    {
+      "noticia_int_id": 127,
+      "noticia_txt_titulo": "In quibusdam.",
+      "noticia_txt_texto": "Perferendis unde corrupti perferendis est laborum fugit facilis. Fuga et aperiam ipsum excepturi molestias mollitia. Odit rerum nihil velit eos non natus. Nihil est reprehenderit voluptatem eum suscipit. Cumque deleniti ea aut aut. Molestias voluptatem possimus quam. Rem exercitationem debitis ut omnis. Recusandae veritatis suscipit aut. Nesciunt sit asperiores odit architecto molestiae. Iure consequatur nisi repudiandae ullam excepturi.",
+      "noticia_txt_foto": "https://placeimg.com/100/100/any?77",
+      "created_at": "2022-03-06T22:41:35.000000Z",
+      "updated_at": "2022-03-06T22:41:35.000000Z",
+      "deleted_at": null,
+      "noticia_bool_ativo": 1,
+      "noticia_tipos": [
+        {
+          "noticiaTipo_int_id": 43,
+          "noticiaTipo_txt_chave": "regional",
+          "noticiaTipo_txt_valor": "Notícias Regionais",
+          "noticiaTipo_bool_ativo": 1,
           "deleted_at": null,
-          "noticia_bool_ativo": 1,
-          "noticia_tipos": [
-              {
-                  "noticiaTipo_int_id": 45,
-                  "noticiaTipo_txt_chave": "internacional",
-                  "noticiaTipo_txt_valor": "Notícias Internacionais",
-                  "noticiaTipo_bool_ativo": 1,
-                  "deleted_at": null,
-                  "created_at": null,
-                  "updated_at": null,
-                  "pivot": {
-                      "noticia_int_id": 128,
-                      "noticiaTipo_int_id": 45
-                  }
-              }
-          ]
-      },
-      {
-          "noticia_int_id": 129,
-          "noticia_txt_titulo": "Ex maiores sit.",
-          "noticia_txt_texto": "Dolore vitae ullam nesciunt consequatur rerum magni. Nobis veniam provident in aut qui. Autem dolores ut doloremque sed rem odit quaerat. Quisquam provident quaerat vitae officia maxime. Eius et cupiditate quia sunt. Deserunt maxime ducimus quis aspernatur. Et sed temporibus aspernatur reprehenderit. Et veritatis tempora aut nisi sint nam. Omnis fugiat soluta aspernatur voluptates consequuntur unde ipsam. Nihil consequuntur neque at sit. Velit sit sit dolores rerum.",
-          "noticia_txt_foto": "https://placeimg.com/100/100/any?60",
-          "created_at": "2022-03-06T22:41:35.000000Z",
-          "updated_at": "2022-03-06T22:41:35.000000Z",
+          "created_at": null,
+          "updated_at": null,
+          "pivot": {
+            "noticia_int_id": 127,
+            "noticiaTipo_int_id": 43
+          }
+        }
+      ]
+    },
+    {
+      "noticia_int_id": 128,
+      "noticia_txt_titulo": "Commodi animi culpa.",
+      "noticia_txt_texto": "Tempora eum repudiandae similique officia facilis repellendus. Optio officia ducimus pariatur et. Debitis magnam sit tenetur nobis recusandae in placeat odit. Perferendis sit pariatur ullam qui optio praesentium et. Eveniet expedita nesciunt necessitatibus modi modi. Pariatur laboriosam dicta voluptate inventore saepe. Fuga omnis quo iste accusantium.",
+      "noticia_txt_foto": "https://placeimg.com/100/100/any?6",
+      "created_at": "2022-03-06T22:41:35.000000Z",
+      "updated_at": "2022-03-06T22:41:35.000000Z",
+      "deleted_at": null,
+      "noticia_bool_ativo": 1,
+      "noticia_tipos": [
+        {
+          "noticiaTipo_int_id": 45,
+          "noticiaTipo_txt_chave": "internacional",
+          "noticiaTipo_txt_valor": "Notícias Internacionais",
+          "noticiaTipo_bool_ativo": 1,
           "deleted_at": null,
-          "noticia_bool_ativo": 1,
-          "noticia_tipos": [
-              {
-                  "noticiaTipo_int_id": 44,
-                  "noticiaTipo_txt_chave": "nacional",
-                  "noticiaTipo_txt_valor": "Notícias Nacionais",
-                  "noticiaTipo_bool_ativo": 1,
-                  "deleted_at": null,
-                  "created_at": null,
-                  "updated_at": null,
-                  "pivot": {
-                      "noticia_int_id": 129,
-                      "noticiaTipo_int_id": 44
-                  }
-              }
-          ]
-      },
-      {
-          "noticia_int_id": 130,
-          "noticia_txt_titulo": "Possimus qui hic at.",
-          "noticia_txt_texto": "Molestias soluta ea est beatae eos sunt consectetur doloremque. Nihil nobis vitae enim animi temporibus. Consequuntur autem eum dicta iste reiciendis voluptate voluptatem voluptatem. Nihil repellat laudantium expedita quibusdam mollitia. Repellendus exercitationem exercitationem placeat maiores. Totam nesciunt at esse maiores sed hic exercitationem. Repudiandae quam facere numquam facere maxime. Quibusdam et quis rerum laboriosam et et.",
-          "noticia_txt_foto": "https://placeimg.com/100/100/any?9",
-          "created_at": "2022-03-06T22:41:35.000000Z",
-          "updated_at": "2022-03-06T22:41:35.000000Z",
+          "created_at": null,
+          "updated_at": null,
+          "pivot": {
+            "noticia_int_id": 128,
+            "noticiaTipo_int_id": 45
+          }
+        }
+      ]
+    },
+    {
+      "noticia_int_id": 129,
+      "noticia_txt_titulo": "Ex maiores sit.",
+      "noticia_txt_texto": "Dolore vitae ullam nesciunt consequatur rerum magni. Nobis veniam provident in aut qui. Autem dolores ut doloremque sed rem odit quaerat. Quisquam provident quaerat vitae officia maxime. Eius et cupiditate quia sunt. Deserunt maxime ducimus quis aspernatur. Et sed temporibus aspernatur reprehenderit. Et veritatis tempora aut nisi sint nam. Omnis fugiat soluta aspernatur voluptates consequuntur unde ipsam. Nihil consequuntur neque at sit. Velit sit sit dolores rerum.",
+      "noticia_txt_foto": "https://placeimg.com/100/100/any?60",
+      "created_at": "2022-03-06T22:41:35.000000Z",
+      "updated_at": "2022-03-06T22:41:35.000000Z",
+      "deleted_at": null,
+      "noticia_bool_ativo": 1,
+      "noticia_tipos": [
+        {
+          "noticiaTipo_int_id": 44,
+          "noticiaTipo_txt_chave": "nacional",
+          "noticiaTipo_txt_valor": "Notícias Nacionais",
+          "noticiaTipo_bool_ativo": 1,
           "deleted_at": null,
-          "noticia_bool_ativo": 1,
-          "noticia_tipos": [
-              {
-                  "noticiaTipo_int_id": 45,
-                  "noticiaTipo_txt_chave": "internacional",
-                  "noticiaTipo_txt_valor": "Notícias Internacionais",
-                  "noticiaTipo_bool_ativo": 1,
-                  "deleted_at": null,
-                  "created_at": null,
-                  "updated_at": null,
-                  "pivot": {
-                      "noticia_int_id": 130,
-                      "noticiaTipo_int_id": 45
-                  }
-              }
-          ]
-      },
-      {
-          "noticia_int_id": 131,
-          "noticia_txt_titulo": "Ut reprehenderit.",
-          "noticia_txt_texto": "Et est aut harum enim doloribus. Voluptatibus necessitatibus odio sunt nam hic. Non sint voluptate fugit sit eum quidem ipsam quia. Corporis suscipit ea quo ratione fuga. Impedit deserunt saepe esse error. Et rerum aut distinctio necessitatibus neque asperiores. Quia vel officiis similique natus et. Est qui quam perferendis sunt eum. Provident laboriosam libero nostrum a et. Accusantium optio consequatur velit dolorem quia.",
-          "noticia_txt_foto": "https://placeimg.com/100/100/any?61",
-          "created_at": "2022-03-06T22:41:35.000000Z",
-          "updated_at": "2022-03-06T22:41:35.000000Z",
+          "created_at": null,
+          "updated_at": null,
+          "pivot": {
+            "noticia_int_id": 129,
+            "noticiaTipo_int_id": 44
+          }
+        }
+      ]
+    },
+    {
+      "noticia_int_id": 130,
+      "noticia_txt_titulo": "Possimus qui hic at.",
+      "noticia_txt_texto": "Molestias soluta ea est beatae eos sunt consectetur doloremque. Nihil nobis vitae enim animi temporibus. Consequuntur autem eum dicta iste reiciendis voluptate voluptatem voluptatem. Nihil repellat laudantium expedita quibusdam mollitia. Repellendus exercitationem exercitationem placeat maiores. Totam nesciunt at esse maiores sed hic exercitationem. Repudiandae quam facere numquam facere maxime. Quibusdam et quis rerum laboriosam et et.",
+      "noticia_txt_foto": "https://placeimg.com/100/100/any?9",
+      "created_at": "2022-03-06T22:41:35.000000Z",
+      "updated_at": "2022-03-06T22:41:35.000000Z",
+      "deleted_at": null,
+      "noticia_bool_ativo": 1,
+      "noticia_tipos": [
+        {
+          "noticiaTipo_int_id": 45,
+          "noticiaTipo_txt_chave": "internacional",
+          "noticiaTipo_txt_valor": "Notícias Internacionais",
+          "noticiaTipo_bool_ativo": 1,
           "deleted_at": null,
-          "noticia_bool_ativo": 1,
-          "noticia_tipos": [
-              {
-                  "noticiaTipo_int_id": 44,
-                  "noticiaTipo_txt_chave": "nacional",
-                  "noticiaTipo_txt_valor": "Notícias Nacionais",
-                  "noticiaTipo_bool_ativo": 1,
-                  "deleted_at": null,
-                  "created_at": null,
-                  "updated_at": null,
-                  "pivot": {
-                      "noticia_int_id": 131,
-                      "noticiaTipo_int_id": 44
-                  }
-              }
-          ]
-      },
-      {
-          "noticia_int_id": 132,
-          "noticia_txt_titulo": "Quo numquam.",
-          "noticia_txt_texto": "Modi natus consequatur et non cupiditate. Fugiat non rerum ducimus sequi id. Et eligendi voluptatum tenetur qui. Impedit et et qui voluptatem. Voluptatibus hic ut corrupti nisi sapiente ab aut. Exercitationem labore sunt provident earum sunt eum est. Repellendus quis doloribus totam. Ut sint quibusdam voluptas beatae et. Eaque recusandae quisquam eos hic. Vitae et quae aperiam qui illum est fugit non.",
-          "noticia_txt_foto": "https://placeimg.com/100/100/any?38",
-          "created_at": "2022-03-06T22:41:35.000000Z",
-          "updated_at": "2022-03-06T22:41:35.000000Z",
+          "created_at": null,
+          "updated_at": null,
+          "pivot": {
+            "noticia_int_id": 130,
+            "noticiaTipo_int_id": 45
+          }
+        }
+      ]
+    },
+    {
+      "noticia_int_id": 131,
+      "noticia_txt_titulo": "Ut reprehenderit.",
+      "noticia_txt_texto": "Et est aut harum enim doloribus. Voluptatibus necessitatibus odio sunt nam hic. Non sint voluptate fugit sit eum quidem ipsam quia. Corporis suscipit ea quo ratione fuga. Impedit deserunt saepe esse error. Et rerum aut distinctio necessitatibus neque asperiores. Quia vel officiis similique natus et. Est qui quam perferendis sunt eum. Provident laboriosam libero nostrum a et. Accusantium optio consequatur velit dolorem quia.",
+      "noticia_txt_foto": "https://placeimg.com/100/100/any?61",
+      "created_at": "2022-03-06T22:41:35.000000Z",
+      "updated_at": "2022-03-06T22:41:35.000000Z",
+      "deleted_at": null,
+      "noticia_bool_ativo": 1,
+      "noticia_tipos": [
+        {
+          "noticiaTipo_int_id": 44,
+          "noticiaTipo_txt_chave": "nacional",
+          "noticiaTipo_txt_valor": "Notícias Nacionais",
+          "noticiaTipo_bool_ativo": 1,
           "deleted_at": null,
-          "noticia_bool_ativo": 1,
-          "noticia_tipos": [
-              {
-                  "noticiaTipo_int_id": 43,
-                  "noticiaTipo_txt_chave": "regional",
-                  "noticiaTipo_txt_valor": "Notícias Regionais",
-                  "noticiaTipo_bool_ativo": 1,
-                  "deleted_at": null,
-                  "created_at": null,
-                  "updated_at": null,
-                  "pivot": {
-                      "noticia_int_id": 132,
-                      "noticiaTipo_int_id": 43
-                  }
-              }
-          ]
-      },
-      {
-          "noticia_int_id": 133,
-          "noticia_txt_titulo": "Vero ut.",
-          "noticia_txt_texto": "Eos deleniti amet laboriosam sed dolorum accusamus qui. Expedita quidem deserunt recusandae et dignissimos soluta fugiat consequatur. Id aspernatur et qui et voluptas in. Molestiae perspiciatis eveniet natus iure libero ut ullam. Voluptatem consequatur error placeat et. Et corrupti saepe nam facilis autem eveniet sit. Reiciendis ipsum itaque voluptas sed distinctio repellat esse tempora. Rem iste officiis voluptatem hic sed et nostrum.",
-          "noticia_txt_foto": "https://placeimg.com/100/100/any?21",
-          "created_at": "2022-03-06T22:41:35.000000Z",
-          "updated_at": "2022-03-06T22:41:35.000000Z",
+          "created_at": null,
+          "updated_at": null,
+          "pivot": {
+            "noticia_int_id": 131,
+            "noticiaTipo_int_id": 44
+          }
+        }
+      ]
+    },
+    {
+      "noticia_int_id": 132,
+      "noticia_txt_titulo": "Quo numquam.",
+      "noticia_txt_texto": "Modi natus consequatur et non cupiditate. Fugiat non rerum ducimus sequi id. Et eligendi voluptatum tenetur qui. Impedit et et qui voluptatem. Voluptatibus hic ut corrupti nisi sapiente ab aut. Exercitationem labore sunt provident earum sunt eum est. Repellendus quis doloribus totam. Ut sint quibusdam voluptas beatae et. Eaque recusandae quisquam eos hic. Vitae et quae aperiam qui illum est fugit non.",
+      "noticia_txt_foto": "https://placeimg.com/100/100/any?38",
+      "created_at": "2022-03-06T22:41:35.000000Z",
+      "updated_at": "2022-03-06T22:41:35.000000Z",
+      "deleted_at": null,
+      "noticia_bool_ativo": 1,
+      "noticia_tipos": [
+        {
+          "noticiaTipo_int_id": 43,
+          "noticiaTipo_txt_chave": "regional",
+          "noticiaTipo_txt_valor": "Notícias Regionais",
+          "noticiaTipo_bool_ativo": 1,
           "deleted_at": null,
-          "noticia_bool_ativo": 1,
-          "noticia_tipos": [
-              {
-                  "noticiaTipo_int_id": 44,
-                  "noticiaTipo_txt_chave": "nacional",
-                  "noticiaTipo_txt_valor": "Notícias Nacionais",
-                  "noticiaTipo_bool_ativo": 1,
-                  "deleted_at": null,
-                  "created_at": null,
-                  "updated_at": null,
-                  "pivot": {
-                      "noticia_int_id": 133,
-                      "noticiaTipo_int_id": 44
-                  }
-              }
-          ]
-      },
-      {
-          "noticia_int_id": 134,
-          "noticia_txt_titulo": "Tempora consectetur.",
-          "noticia_txt_texto": "Est natus doloribus sed quibusdam. Necessitatibus aliquid non omnis ut aut totam. At provident reiciendis autem et incidunt quam. Corporis ipsam molestiae id. Ullam inventore quaerat exercitationem est consequatur enim et. Molestias voluptatem velit autem consequuntur voluptate voluptas. Magnam odio officiis neque est suscipit ex vitae. Quod et numquam optio dolores voluptas in. Sint vitae earum et.",
-          "noticia_txt_foto": "https://placeimg.com/100/100/any?67",
-          "created_at": "2022-03-06T22:41:35.000000Z",
-          "updated_at": "2022-03-06T22:41:35.000000Z",
+          "created_at": null,
+          "updated_at": null,
+          "pivot": {
+            "noticia_int_id": 132,
+            "noticiaTipo_int_id": 43
+          }
+        }
+      ]
+    },
+    {
+      "noticia_int_id": 133,
+      "noticia_txt_titulo": "Vero ut.",
+      "noticia_txt_texto": "Eos deleniti amet laboriosam sed dolorum accusamus qui. Expedita quidem deserunt recusandae et dignissimos soluta fugiat consequatur. Id aspernatur et qui et voluptas in. Molestiae perspiciatis eveniet natus iure libero ut ullam. Voluptatem consequatur error placeat et. Et corrupti saepe nam facilis autem eveniet sit. Reiciendis ipsum itaque voluptas sed distinctio repellat esse tempora. Rem iste officiis voluptatem hic sed et nostrum.",
+      "noticia_txt_foto": "https://placeimg.com/100/100/any?21",
+      "created_at": "2022-03-06T22:41:35.000000Z",
+      "updated_at": "2022-03-06T22:41:35.000000Z",
+      "deleted_at": null,
+      "noticia_bool_ativo": 1,
+      "noticia_tipos": [
+        {
+          "noticiaTipo_int_id": 44,
+          "noticiaTipo_txt_chave": "nacional",
+          "noticiaTipo_txt_valor": "Notícias Nacionais",
+          "noticiaTipo_bool_ativo": 1,
           "deleted_at": null,
-          "noticia_bool_ativo": 1,
-          "noticia_tipos": [
-              {
-                  "noticiaTipo_int_id": 45,
-                  "noticiaTipo_txt_chave": "internacional",
-                  "noticiaTipo_txt_valor": "Notícias Internacionais",
-                  "noticiaTipo_bool_ativo": 1,
-                  "deleted_at": null,
-                  "created_at": null,
-                  "updated_at": null,
-                  "pivot": {
-                      "noticia_int_id": 134,
-                      "noticiaTipo_int_id": 45
-                  }
-              }
-          ]
-      },
-      {
-          "noticia_int_id": 135,
-          "noticia_txt_titulo": "Est odio accusamus.",
-          "noticia_txt_texto": "Rerum facilis debitis sed aliquid natus. Quisquam quisquam dolore qui iste fugiat dolor. Ut sed non quia officiis deleniti. Repellendus voluptatem deserunt minima architecto minima atque praesentium. Necessitatibus qui ut et illo temporibus. Odio cumque et aliquam laboriosam aperiam natus. Repellendus molestiae iure harum iusto impedit nesciunt. Cupiditate ut facilis sed tenetur. Veritatis doloremque rerum eveniet nam qui sed repellat.",
-          "noticia_txt_foto": "https://placeimg.com/100/100/any?87",
-          "created_at": "2022-03-06T22:41:35.000000Z",
-          "updated_at": "2022-03-06T22:41:35.000000Z",
+          "created_at": null,
+          "updated_at": null,
+          "pivot": {
+            "noticia_int_id": 133,
+            "noticiaTipo_int_id": 44
+          }
+        }
+      ]
+    },
+    {
+      "noticia_int_id": 134,
+      "noticia_txt_titulo": "Tempora consectetur.",
+      "noticia_txt_texto": "Est natus doloribus sed quibusdam. Necessitatibus aliquid non omnis ut aut totam. At provident reiciendis autem et incidunt quam. Corporis ipsam molestiae id. Ullam inventore quaerat exercitationem est consequatur enim et. Molestias voluptatem velit autem consequuntur voluptate voluptas. Magnam odio officiis neque est suscipit ex vitae. Quod et numquam optio dolores voluptas in. Sint vitae earum et.",
+      "noticia_txt_foto": "https://placeimg.com/100/100/any?67",
+      "created_at": "2022-03-06T22:41:35.000000Z",
+      "updated_at": "2022-03-06T22:41:35.000000Z",
+      "deleted_at": null,
+      "noticia_bool_ativo": 1,
+      "noticia_tipos": [
+        {
+          "noticiaTipo_int_id": 45,
+          "noticiaTipo_txt_chave": "internacional",
+          "noticiaTipo_txt_valor": "Notícias Internacionais",
+          "noticiaTipo_bool_ativo": 1,
           "deleted_at": null,
-          "noticia_bool_ativo": 1,
-          "noticia_tipos": [
-              {
-                  "noticiaTipo_int_id": 44,
-                  "noticiaTipo_txt_chave": "nacional",
-                  "noticiaTipo_txt_valor": "Notícias Nacionais",
-                  "noticiaTipo_bool_ativo": 1,
-                  "deleted_at": null,
-                  "created_at": null,
-                  "updated_at": null,
-                  "pivot": {
-                      "noticia_int_id": 135,
-                      "noticiaTipo_int_id": 44
-                  }
-              }
-          ]
-      },
-      {
-          "noticia_int_id": 136,
-          "noticia_txt_titulo": "Libero minima.",
-          "noticia_txt_texto": "Enim modi quaerat et iusto exercitationem perspiciatis similique dolor. Sunt repellendus natus nesciunt qui id sunt quidem quasi. Et velit id qui neque culpa consequatur et. Eum animi mollitia veniam repellat tempora. Dolor excepturi et ab sequi veritatis alias aut. Illum libero et consequatur. Aut consequuntur impedit quos non reiciendis hic quaerat. Eaque sint qui nostrum error accusamus eligendi saepe asperiores.",
-          "noticia_txt_foto": "https://placeimg.com/100/100/any?62",
-          "created_at": "2022-03-06T22:41:35.000000Z",
-          "updated_at": "2022-03-06T22:41:35.000000Z",
+          "created_at": null,
+          "updated_at": null,
+          "pivot": {
+            "noticia_int_id": 134,
+            "noticiaTipo_int_id": 45
+          }
+        }
+      ]
+    },
+    {
+      "noticia_int_id": 135,
+      "noticia_txt_titulo": "Est odio accusamus.",
+      "noticia_txt_texto": "Rerum facilis debitis sed aliquid natus. Quisquam quisquam dolore qui iste fugiat dolor. Ut sed non quia officiis deleniti. Repellendus voluptatem deserunt minima architecto minima atque praesentium. Necessitatibus qui ut et illo temporibus. Odio cumque et aliquam laboriosam aperiam natus. Repellendus molestiae iure harum iusto impedit nesciunt. Cupiditate ut facilis sed tenetur. Veritatis doloremque rerum eveniet nam qui sed repellat.",
+      "noticia_txt_foto": "https://placeimg.com/100/100/any?87",
+      "created_at": "2022-03-06T22:41:35.000000Z",
+      "updated_at": "2022-03-06T22:41:35.000000Z",
+      "deleted_at": null,
+      "noticia_bool_ativo": 1,
+      "noticia_tipos": [
+        {
+          "noticiaTipo_int_id": 44,
+          "noticiaTipo_txt_chave": "nacional",
+          "noticiaTipo_txt_valor": "Notícias Nacionais",
+          "noticiaTipo_bool_ativo": 1,
           "deleted_at": null,
-          "noticia_bool_ativo": 1,
-          "noticia_tipos": [
-              {
-                  "noticiaTipo_int_id": 45,
-                  "noticiaTipo_txt_chave": "internacional",
-                  "noticiaTipo_txt_valor": "Notícias Internacionais",
-                  "noticiaTipo_bool_ativo": 1,
-                  "deleted_at": null,
-                  "created_at": null,
-                  "updated_at": null,
-                  "pivot": {
-                      "noticia_int_id": 136,
-                      "noticiaTipo_int_id": 45
-                  }
-              }
-          ]
-      },
-      {
-          "noticia_int_id": 137,
-          "noticia_txt_titulo": "Et sit harum.",
-          "noticia_txt_texto": "Sunt fuga delectus minima ut. Rem id quo ullam explicabo. Soluta quod aperiam fugit vero cupiditate sequi. Et maiores vero earum maiores iusto tenetur cum saepe. Eveniet ipsam aut aut architecto quam laboriosam quia. Quae suscipit maiores ea quae. Magnam rerum ea libero illum distinctio consequuntur. Eligendi tempore laborum quo est iure. Unde qui a est officiis velit inventore ipsam aut. Dolores et reiciendis quo quasi doloribus laborum quia.",
-          "noticia_txt_foto": "https://placeimg.com/100/100/any?49",
-          "created_at": "2022-03-06T22:41:35.000000Z",
-          "updated_at": "2022-03-06T22:41:35.000000Z",
+          "created_at": null,
+          "updated_at": null,
+          "pivot": {
+            "noticia_int_id": 135,
+            "noticiaTipo_int_id": 44
+          }
+        }
+      ]
+    },
+    {
+      "noticia_int_id": 136,
+      "noticia_txt_titulo": "Libero minima.",
+      "noticia_txt_texto": "Enim modi quaerat et iusto exercitationem perspiciatis similique dolor. Sunt repellendus natus nesciunt qui id sunt quidem quasi. Et velit id qui neque culpa consequatur et. Eum animi mollitia veniam repellat tempora. Dolor excepturi et ab sequi veritatis alias aut. Illum libero et consequatur. Aut consequuntur impedit quos non reiciendis hic quaerat. Eaque sint qui nostrum error accusamus eligendi saepe asperiores.",
+      "noticia_txt_foto": "https://placeimg.com/100/100/any?62",
+      "created_at": "2022-03-06T22:41:35.000000Z",
+      "updated_at": "2022-03-06T22:41:35.000000Z",
+      "deleted_at": null,
+      "noticia_bool_ativo": 1,
+      "noticia_tipos": [
+        {
+          "noticiaTipo_int_id": 45,
+          "noticiaTipo_txt_chave": "internacional",
+          "noticiaTipo_txt_valor": "Notícias Internacionais",
+          "noticiaTipo_bool_ativo": 1,
           "deleted_at": null,
-          "noticia_bool_ativo": 1,
-          "noticia_tipos": [
-              {
-                  "noticiaTipo_int_id": 43,
-                  "noticiaTipo_txt_chave": "regional",
-                  "noticiaTipo_txt_valor": "Notícias Regionais",
-                  "noticiaTipo_bool_ativo": 1,
-                  "deleted_at": null,
-                  "created_at": null,
-                  "updated_at": null,
-                  "pivot": {
-                      "noticia_int_id": 137,
-                      "noticiaTipo_int_id": 43
-                  }
-              }
-          ]
-      },
-      {
-          "noticia_int_id": 138,
-          "noticia_txt_titulo": "Tempore quos.",
-          "noticia_txt_texto": "Quia similique in numquam libero architecto. Sint repudiandae neque inventore in. Sint rerum non sit et hic ex. Voluptatem praesentium error accusantium illo voluptas facilis. Numquam ipsam veniam dolorem et. Sit nemo laboriosam voluptatem iste blanditiis. Est nulla nemo quia. Quis est reiciendis repudiandae qui cumque molestiae sint ut. Consequuntur saepe et officiis quod. Maiores qui ut harum est. Ex voluptatem et inventore excepturi aut molestias sed.",
-          "noticia_txt_foto": "https://placeimg.com/100/100/any?7",
-          "created_at": "2022-03-06T22:41:35.000000Z",
-          "updated_at": "2022-03-06T22:41:35.000000Z",
+          "created_at": null,
+          "updated_at": null,
+          "pivot": {
+            "noticia_int_id": 136,
+            "noticiaTipo_int_id": 45
+          }
+        }
+      ]
+    },
+    {
+      "noticia_int_id": 137,
+      "noticia_txt_titulo": "Et sit harum.",
+      "noticia_txt_texto": "Sunt fuga delectus minima ut. Rem id quo ullam explicabo. Soluta quod aperiam fugit vero cupiditate sequi. Et maiores vero earum maiores iusto tenetur cum saepe. Eveniet ipsam aut aut architecto quam laboriosam quia. Quae suscipit maiores ea quae. Magnam rerum ea libero illum distinctio consequuntur. Eligendi tempore laborum quo est iure. Unde qui a est officiis velit inventore ipsam aut. Dolores et reiciendis quo quasi doloribus laborum quia.",
+      "noticia_txt_foto": "https://placeimg.com/100/100/any?49",
+      "created_at": "2022-03-06T22:41:35.000000Z",
+      "updated_at": "2022-03-06T22:41:35.000000Z",
+      "deleted_at": null,
+      "noticia_bool_ativo": 1,
+      "noticia_tipos": [
+        {
+          "noticiaTipo_int_id": 43,
+          "noticiaTipo_txt_chave": "regional",
+          "noticiaTipo_txt_valor": "Notícias Regionais",
+          "noticiaTipo_bool_ativo": 1,
           "deleted_at": null,
-          "noticia_bool_ativo": 1,
-          "noticia_tipos": [
-              {
-                  "noticiaTipo_int_id": 45,
-                  "noticiaTipo_txt_chave": "internacional",
-                  "noticiaTipo_txt_valor": "Notícias Internacionais",
-                  "noticiaTipo_bool_ativo": 1,
-                  "deleted_at": null,
-                  "created_at": null,
-                  "updated_at": null,
-                  "pivot": {
-                      "noticia_int_id": 138,
-                      "noticiaTipo_int_id": 45
-                  }
-              }
-          ]
-      },
-      {
-          "noticia_int_id": 139,
-          "noticia_txt_titulo": "Expedita beatae.",
-          "noticia_txt_texto": "Corporis voluptas eum totam. Ut doloremque quia ipsa sint. Eaque a architecto saepe. Recusandae voluptas non culpa saepe nostrum aperiam recusandae dolore. Quia fuga molestias quibusdam aperiam voluptas. Qui suscipit maiores rerum odit dolor totam. Eius quo molestias ut magni. Eos sit cum ut minima. Officia sequi nemo facere. Nulla quis libero cum eos est praesentium.",
-          "noticia_txt_foto": "https://placeimg.com/100/100/any?69",
-          "created_at": "2022-03-06T22:41:35.000000Z",
-          "updated_at": "2022-03-06T22:41:35.000000Z",
+          "created_at": null,
+          "updated_at": null,
+          "pivot": {
+            "noticia_int_id": 137,
+            "noticiaTipo_int_id": 43
+          }
+        }
+      ]
+    },
+    {
+      "noticia_int_id": 138,
+      "noticia_txt_titulo": "Tempore quos.",
+      "noticia_txt_texto": "Quia similique in numquam libero architecto. Sint repudiandae neque inventore in. Sint rerum non sit et hic ex. Voluptatem praesentium error accusantium illo voluptas facilis. Numquam ipsam veniam dolorem et. Sit nemo laboriosam voluptatem iste blanditiis. Est nulla nemo quia. Quis est reiciendis repudiandae qui cumque molestiae sint ut. Consequuntur saepe et officiis quod. Maiores qui ut harum est. Ex voluptatem et inventore excepturi aut molestias sed.",
+      "noticia_txt_foto": "https://placeimg.com/100/100/any?7",
+      "created_at": "2022-03-06T22:41:35.000000Z",
+      "updated_at": "2022-03-06T22:41:35.000000Z",
+      "deleted_at": null,
+      "noticia_bool_ativo": 1,
+      "noticia_tipos": [
+        {
+          "noticiaTipo_int_id": 45,
+          "noticiaTipo_txt_chave": "internacional",
+          "noticiaTipo_txt_valor": "Notícias Internacionais",
+          "noticiaTipo_bool_ativo": 1,
           "deleted_at": null,
-          "noticia_bool_ativo": 1,
-          "noticia_tipos": [
-              {
-                  "noticiaTipo_int_id": 44,
-                  "noticiaTipo_txt_chave": "nacional",
-                  "noticiaTipo_txt_valor": "Notícias Nacionais",
-                  "noticiaTipo_bool_ativo": 1,
-                  "deleted_at": null,
-                  "created_at": null,
-                  "updated_at": null,
-                  "pivot": {
-                      "noticia_int_id": 139,
-                      "noticiaTipo_int_id": 44
-                  }
-              }
-          ]
-      },
-      {
-          "noticia_int_id": 140,
-          "noticia_txt_titulo": "Quaerat quasi.",
-          "noticia_txt_texto": "Unde officia qui voluptas ut rem. A quia dignissimos ea aliquid sint sit dolores. Possimus animi aliquam aut saepe cumque id quasi quia. Aut non vel ipsa labore eius fugiat totam. Tenetur aperiam consequatur cupiditate id qui velit molestiae. Dolores rerum voluptatum nostrum quia sed excepturi. Impedit ratione quis nulla rerum veritatis beatae. Temporibus velit ea minus dolores et.",
-          "noticia_txt_foto": "https://placeimg.com/100/100/any?45",
-          "created_at": "2022-03-06T22:41:35.000000Z",
-          "updated_at": "2022-03-06T22:41:35.000000Z",
+          "created_at": null,
+          "updated_at": null,
+          "pivot": {
+            "noticia_int_id": 138,
+            "noticiaTipo_int_id": 45
+          }
+        }
+      ]
+    },
+    {
+      "noticia_int_id": 139,
+      "noticia_txt_titulo": "Expedita beatae.",
+      "noticia_txt_texto": "Corporis voluptas eum totam. Ut doloremque quia ipsa sint. Eaque a architecto saepe. Recusandae voluptas non culpa saepe nostrum aperiam recusandae dolore. Quia fuga molestias quibusdam aperiam voluptas. Qui suscipit maiores rerum odit dolor totam. Eius quo molestias ut magni. Eos sit cum ut minima. Officia sequi nemo facere. Nulla quis libero cum eos est praesentium.",
+      "noticia_txt_foto": "https://placeimg.com/100/100/any?69",
+      "created_at": "2022-03-06T22:41:35.000000Z",
+      "updated_at": "2022-03-06T22:41:35.000000Z",
+      "deleted_at": null,
+      "noticia_bool_ativo": 1,
+      "noticia_tipos": [
+        {
+          "noticiaTipo_int_id": 44,
+          "noticiaTipo_txt_chave": "nacional",
+          "noticiaTipo_txt_valor": "Notícias Nacionais",
+          "noticiaTipo_bool_ativo": 1,
           "deleted_at": null,
-          "noticia_bool_ativo": 1,
-          "noticia_tipos": [
-              {
-                  "noticiaTipo_int_id": 45,
-                  "noticiaTipo_txt_chave": "internacional",
-                  "noticiaTipo_txt_valor": "Notícias Internacionais",
-                  "noticiaTipo_bool_ativo": 1,
-                  "deleted_at": null,
-                  "created_at": null,
-                  "updated_at": null,
-                  "pivot": {
-                      "noticia_int_id": 140,
-                      "noticiaTipo_int_id": 45
-                  }
-              }
-          ]
-      },
-      {
-          "noticia_int_id": 141,
-          "noticia_txt_titulo": "Explicabo ad.",
-          "noticia_txt_texto": "Provident ipsum officia ipsa vel. Nobis earum enim itaque voluptas. Quas aliquam commodi facere. Mollitia enim consequatur atque omnis. Est eos vel quaerat alias adipisci atque aut. Voluptatem pariatur consequuntur atque occaecati. Et distinctio non non quisquam alias cum sed nihil. Ullam officiis excepturi vero eveniet. Alias quis in quis officia. Non saepe voluptas blanditiis velit. Repellat ratione animi inventore omnis repudiandae molestias.",
-          "noticia_txt_foto": "https://placeimg.com/100/100/any?11",
-          "created_at": "2022-03-06T22:41:35.000000Z",
-          "updated_at": "2022-03-06T22:41:35.000000Z",
+          "created_at": null,
+          "updated_at": null,
+          "pivot": {
+            "noticia_int_id": 139,
+            "noticiaTipo_int_id": 44
+          }
+        }
+      ]
+    },
+    {
+      "noticia_int_id": 140,
+      "noticia_txt_titulo": "Quaerat quasi.",
+      "noticia_txt_texto": "Unde officia qui voluptas ut rem. A quia dignissimos ea aliquid sint sit dolores. Possimus animi aliquam aut saepe cumque id quasi quia. Aut non vel ipsa labore eius fugiat totam. Tenetur aperiam consequatur cupiditate id qui velit molestiae. Dolores rerum voluptatum nostrum quia sed excepturi. Impedit ratione quis nulla rerum veritatis beatae. Temporibus velit ea minus dolores et.",
+      "noticia_txt_foto": "https://placeimg.com/100/100/any?45",
+      "created_at": "2022-03-06T22:41:35.000000Z",
+      "updated_at": "2022-03-06T22:41:35.000000Z",
+      "deleted_at": null,
+      "noticia_bool_ativo": 1,
+      "noticia_tipos": [
+        {
+          "noticiaTipo_int_id": 45,
+          "noticiaTipo_txt_chave": "internacional",
+          "noticiaTipo_txt_valor": "Notícias Internacionais",
+          "noticiaTipo_bool_ativo": 1,
           "deleted_at": null,
-          "noticia_bool_ativo": 1,
-          "noticia_tipos": [
-              {
-                  "noticiaTipo_int_id": 43,
-                  "noticiaTipo_txt_chave": "regional",
-                  "noticiaTipo_txt_valor": "Notícias Regionais",
-                  "noticiaTipo_bool_ativo": 1,
-                  "deleted_at": null,
-                  "created_at": null,
-                  "updated_at": null,
-                  "pivot": {
-                      "noticia_int_id": 141,
-                      "noticiaTipo_int_id": 43
-                  }
-              }
-          ]
-      },
-      {
-          "noticia_int_id": 142,
-          "noticia_txt_titulo": "Eos nam at sunt ut.",
-          "noticia_txt_texto": "Suscipit tempora et eum eum. Eum animi et pariatur architecto. Sint quia et vitae provident dolores ut id facere. Et consequatur enim ratione nihil excepturi maxime tenetur et. Vel in facere sunt. Dolor nesciunt eaque suscipit similique aut impedit natus. Perferendis expedita rerum vero voluptatem enim ipsam. Ex non consequatur non debitis. Ut officia libero vero quisquam perspiciatis pariatur. Id temporibus ut velit et vel et. Et beatae nihil quo id.",
-          "noticia_txt_foto": "https://placeimg.com/100/100/any?91",
-          "created_at": "2022-03-06T22:41:35.000000Z",
-          "updated_at": "2022-03-06T22:41:35.000000Z",
+          "created_at": null,
+          "updated_at": null,
+          "pivot": {
+            "noticia_int_id": 140,
+            "noticiaTipo_int_id": 45
+          }
+        }
+      ]
+    },
+    {
+      "noticia_int_id": 141,
+      "noticia_txt_titulo": "Explicabo ad.",
+      "noticia_txt_texto": "Provident ipsum officia ipsa vel. Nobis earum enim itaque voluptas. Quas aliquam commodi facere. Mollitia enim consequatur atque omnis. Est eos vel quaerat alias adipisci atque aut. Voluptatem pariatur consequuntur atque occaecati. Et distinctio non non quisquam alias cum sed nihil. Ullam officiis excepturi vero eveniet. Alias quis in quis officia. Non saepe voluptas blanditiis velit. Repellat ratione animi inventore omnis repudiandae molestias.",
+      "noticia_txt_foto": "https://placeimg.com/100/100/any?11",
+      "created_at": "2022-03-06T22:41:35.000000Z",
+      "updated_at": "2022-03-06T22:41:35.000000Z",
+      "deleted_at": null,
+      "noticia_bool_ativo": 1,
+      "noticia_tipos": [
+        {
+          "noticiaTipo_int_id": 43,
+          "noticiaTipo_txt_chave": "regional",
+          "noticiaTipo_txt_valor": "Notícias Regionais",
+          "noticiaTipo_bool_ativo": 1,
           "deleted_at": null,
-          "noticia_bool_ativo": 1,
-          "noticia_tipos": [
-              {
-                  "noticiaTipo_int_id": 45,
-                  "noticiaTipo_txt_chave": "internacional",
-                  "noticiaTipo_txt_valor": "Notícias Internacionais",
-                  "noticiaTipo_bool_ativo": 1,
-                  "deleted_at": null,
-                  "created_at": null,
-                  "updated_at": null,
-                  "pivot": {
-                      "noticia_int_id": 142,
-                      "noticiaTipo_int_id": 45
-                  }
-              }
-          ]
-      },
-      {
-          "noticia_int_id": 143,
-          "noticia_txt_titulo": "Necessitatibus sint.",
-          "noticia_txt_texto": "Unde suscipit cupiditate rerum. Sed ex optio error ut aperiam qui delectus porro. Dolores corrupti numquam illum facere. Fugit cupiditate ut vel reiciendis ut et. Consequatur enim molestiae voluptatem amet repudiandae quis neque. Error qui porro dolorem aliquam. Harum officia commodi a placeat voluptas eos. Eum quia quo facere enim enim eveniet. Saepe est blanditiis et quas dicta consequatur. Nobis cupiditate sed vero perferendis dolorem. Vel deleniti magnam placeat fugit dolore temporibus.",
-          "noticia_txt_foto": "https://placeimg.com/100/100/any?61",
-          "created_at": "2022-03-06T22:41:35.000000Z",
-          "updated_at": "2022-03-06T22:41:35.000000Z",
+          "created_at": null,
+          "updated_at": null,
+          "pivot": {
+            "noticia_int_id": 141,
+            "noticiaTipo_int_id": 43
+          }
+        }
+      ]
+    },
+    {
+      "noticia_int_id": 142,
+      "noticia_txt_titulo": "Eos nam at sunt ut.",
+      "noticia_txt_texto": "Suscipit tempora et eum eum. Eum animi et pariatur architecto. Sint quia et vitae provident dolores ut id facere. Et consequatur enim ratione nihil excepturi maxime tenetur et. Vel in facere sunt. Dolor nesciunt eaque suscipit similique aut impedit natus. Perferendis expedita rerum vero voluptatem enim ipsam. Ex non consequatur non debitis. Ut officia libero vero quisquam perspiciatis pariatur. Id temporibus ut velit et vel et. Et beatae nihil quo id.",
+      "noticia_txt_foto": "https://placeimg.com/100/100/any?91",
+      "created_at": "2022-03-06T22:41:35.000000Z",
+      "updated_at": "2022-03-06T22:41:35.000000Z",
+      "deleted_at": null,
+      "noticia_bool_ativo": 1,
+      "noticia_tipos": [
+        {
+          "noticiaTipo_int_id": 45,
+          "noticiaTipo_txt_chave": "internacional",
+          "noticiaTipo_txt_valor": "Notícias Internacionais",
+          "noticiaTipo_bool_ativo": 1,
           "deleted_at": null,
-          "noticia_bool_ativo": 1,
-          "noticia_tipos": [
-              {
-                  "noticiaTipo_int_id": 45,
-                  "noticiaTipo_txt_chave": "internacional",
-                  "noticiaTipo_txt_valor": "Notícias Internacionais",
-                  "noticiaTipo_bool_ativo": 1,
-                  "deleted_at": null,
-                  "created_at": null,
-                  "updated_at": null,
-                  "pivot": {
-                      "noticia_int_id": 143,
-                      "noticiaTipo_int_id": 45
-                  }
-              }
-          ]
-      },
-      {
-          "noticia_int_id": 144,
-          "noticia_txt_titulo": "Atque.",
-          "noticia_txt_texto": "Consequatur provident incidunt id. Qui non dolores voluptas consequuntur et odit hic possimus. Nisi modi quia quam voluptatibus hic architecto. Dolor animi dolorem quod dignissimos. Impedit reiciendis iusto quis quam in. Recusandae qui accusantium quia animi quos. Quidem temporibus aspernatur maiores nulla. Et ducimus recusandae ullam dicta sapiente.",
-          "noticia_txt_foto": "https://placeimg.com/100/100/any?4",
-          "created_at": "2022-03-06T22:41:35.000000Z",
-          "updated_at": "2022-03-06T22:41:35.000000Z",
+          "created_at": null,
+          "updated_at": null,
+          "pivot": {
+            "noticia_int_id": 142,
+            "noticiaTipo_int_id": 45
+          }
+        }
+      ]
+    },
+    {
+      "noticia_int_id": 143,
+      "noticia_txt_titulo": "Necessitatibus sint.",
+      "noticia_txt_texto": "Unde suscipit cupiditate rerum. Sed ex optio error ut aperiam qui delectus porro. Dolores corrupti numquam illum facere. Fugit cupiditate ut vel reiciendis ut et. Consequatur enim molestiae voluptatem amet repudiandae quis neque. Error qui porro dolorem aliquam. Harum officia commodi a placeat voluptas eos. Eum quia quo facere enim enim eveniet. Saepe est blanditiis et quas dicta consequatur. Nobis cupiditate sed vero perferendis dolorem. Vel deleniti magnam placeat fugit dolore temporibus.",
+      "noticia_txt_foto": "https://placeimg.com/100/100/any?61",
+      "created_at": "2022-03-06T22:41:35.000000Z",
+      "updated_at": "2022-03-06T22:41:35.000000Z",
+      "deleted_at": null,
+      "noticia_bool_ativo": 1,
+      "noticia_tipos": [
+        {
+          "noticiaTipo_int_id": 45,
+          "noticiaTipo_txt_chave": "internacional",
+          "noticiaTipo_txt_valor": "Notícias Internacionais",
+          "noticiaTipo_bool_ativo": 1,
           "deleted_at": null,
-          "noticia_bool_ativo": 1,
-          "noticia_tipos": [
-              {
-                  "noticiaTipo_int_id": 43,
-                  "noticiaTipo_txt_chave": "regional",
-                  "noticiaTipo_txt_valor": "Notícias Regionais",
-                  "noticiaTipo_bool_ativo": 1,
-                  "deleted_at": null,
-                  "created_at": null,
-                  "updated_at": null,
-                  "pivot": {
-                      "noticia_int_id": 144,
-                      "noticiaTipo_int_id": 43
-                  }
-              }
-          ]
-      },
-      {
-          "noticia_int_id": 145,
-          "noticia_txt_titulo": "Dolores doloremque.",
-          "noticia_txt_texto": "Dolor et et eum et sit quibusdam. Iure velit eligendi blanditiis cupiditate facere et. Hic quidem non eius voluptate eligendi placeat. Tempora ut eius blanditiis quis ea. Et animi assumenda nesciunt numquam ullam. Dolore ex aut corporis dolore laboriosam fugiat nihil qui. Assumenda cumque magnam soluta velit. Vitae architecto odit debitis est nam ut nihil.",
-          "noticia_txt_foto": "https://placeimg.com/100/100/any?98",
-          "created_at": "2022-03-06T22:41:35.000000Z",
-          "updated_at": "2022-03-06T22:41:35.000000Z",
+          "created_at": null,
+          "updated_at": null,
+          "pivot": {
+            "noticia_int_id": 143,
+            "noticiaTipo_int_id": 45
+          }
+        }
+      ]
+    },
+    {
+      "noticia_int_id": 144,
+      "noticia_txt_titulo": "Atque.",
+      "noticia_txt_texto": "Consequatur provident incidunt id. Qui non dolores voluptas consequuntur et odit hic possimus. Nisi modi quia quam voluptatibus hic architecto. Dolor animi dolorem quod dignissimos. Impedit reiciendis iusto quis quam in. Recusandae qui accusantium quia animi quos. Quidem temporibus aspernatur maiores nulla. Et ducimus recusandae ullam dicta sapiente.",
+      "noticia_txt_foto": "https://placeimg.com/100/100/any?4",
+      "created_at": "2022-03-06T22:41:35.000000Z",
+      "updated_at": "2022-03-06T22:41:35.000000Z",
+      "deleted_at": null,
+      "noticia_bool_ativo": 1,
+      "noticia_tipos": [
+        {
+          "noticiaTipo_int_id": 43,
+          "noticiaTipo_txt_chave": "regional",
+          "noticiaTipo_txt_valor": "Notícias Regionais",
+          "noticiaTipo_bool_ativo": 1,
           "deleted_at": null,
-          "noticia_bool_ativo": 1,
-          "noticia_tipos": [
-              {
-                  "noticiaTipo_int_id": 44,
-                  "noticiaTipo_txt_chave": "nacional",
-                  "noticiaTipo_txt_valor": "Notícias Nacionais",
-                  "noticiaTipo_bool_ativo": 1,
-                  "deleted_at": null,
-                  "created_at": null,
-                  "updated_at": null,
-                  "pivot": {
-                      "noticia_int_id": 145,
-                      "noticiaTipo_int_id": 44
-                  }
-              }
-          ]
-      },
-      {
-          "noticia_int_id": 146,
-          "noticia_txt_titulo": "Placeat voluptas.",
-          "noticia_txt_texto": "Est soluta dolorem aliquam voluptatum magnam autem. Molestiae quo sit maxime nobis et voluptatibus. Nihil vitae tempora id facere distinctio dolorum aut. Aliquid aliquam optio molestiae aut. Blanditiis harum fugiat et sint minima. Veniam praesentium aliquam voluptas et est quidem reiciendis. Ullam iure et consequatur in quaerat aut incidunt repudiandae. Animi minima ut et voluptas veritatis nisi quam. Sapiente sit sequi perspiciatis a nostrum error.",
-          "noticia_txt_foto": "https://placeimg.com/100/100/any?18",
-          "created_at": "2022-03-06T22:41:35.000000Z",
-          "updated_at": "2022-03-06T22:41:35.000000Z",
+          "created_at": null,
+          "updated_at": null,
+          "pivot": {
+            "noticia_int_id": 144,
+            "noticiaTipo_int_id": 43
+          }
+        }
+      ]
+    },
+    {
+      "noticia_int_id": 145,
+      "noticia_txt_titulo": "Dolores doloremque.",
+      "noticia_txt_texto": "Dolor et et eum et sit quibusdam. Iure velit eligendi blanditiis cupiditate facere et. Hic quidem non eius voluptate eligendi placeat. Tempora ut eius blanditiis quis ea. Et animi assumenda nesciunt numquam ullam. Dolore ex aut corporis dolore laboriosam fugiat nihil qui. Assumenda cumque magnam soluta velit. Vitae architecto odit debitis est nam ut nihil.",
+      "noticia_txt_foto": "https://placeimg.com/100/100/any?98",
+      "created_at": "2022-03-06T22:41:35.000000Z",
+      "updated_at": "2022-03-06T22:41:35.000000Z",
+      "deleted_at": null,
+      "noticia_bool_ativo": 1,
+      "noticia_tipos": [
+        {
+          "noticiaTipo_int_id": 44,
+          "noticiaTipo_txt_chave": "nacional",
+          "noticiaTipo_txt_valor": "Notícias Nacionais",
+          "noticiaTipo_bool_ativo": 1,
           "deleted_at": null,
-          "noticia_bool_ativo": 1,
-          "noticia_tipos": [
-              {
-                  "noticiaTipo_int_id": 43,
-                  "noticiaTipo_txt_chave": "regional",
-                  "noticiaTipo_txt_valor": "Notícias Regionais",
-                  "noticiaTipo_bool_ativo": 1,
-                  "deleted_at": null,
-                  "created_at": null,
-                  "updated_at": null,
-                  "pivot": {
-                      "noticia_int_id": 146,
-                      "noticiaTipo_int_id": 43
-                  }
-              }
-          ]
-      },
-      {
-          "noticia_int_id": 147,
-          "noticia_txt_titulo": "Neque distinctio.",
-          "noticia_txt_texto": "Enim necessitatibus nihil nobis qui dolores ipsum et ut. Ad velit laborum aut. Soluta harum qui repellendus voluptates veritatis nesciunt. Nobis ratione quisquam ut consequuntur odio quibusdam. Ex rerum porro quo nobis consequatur a. Accusantium in cumque unde esse ea molestiae quibusdam ea. Tenetur aut et atque et. Dicta laboriosam ducimus totam qui impedit. Labore cumque hic est optio quia pariatur eos.",
-          "noticia_txt_foto": "https://placeimg.com/100/100/any?44",
-          "created_at": "2022-03-06T22:41:35.000000Z",
-          "updated_at": "2022-03-06T22:41:35.000000Z",
+          "created_at": null,
+          "updated_at": null,
+          "pivot": {
+            "noticia_int_id": 145,
+            "noticiaTipo_int_id": 44
+          }
+        }
+      ]
+    },
+    {
+      "noticia_int_id": 146,
+      "noticia_txt_titulo": "Placeat voluptas.",
+      "noticia_txt_texto": "Est soluta dolorem aliquam voluptatum magnam autem. Molestiae quo sit maxime nobis et voluptatibus. Nihil vitae tempora id facere distinctio dolorum aut. Aliquid aliquam optio molestiae aut. Blanditiis harum fugiat et sint minima. Veniam praesentium aliquam voluptas et est quidem reiciendis. Ullam iure et consequatur in quaerat aut incidunt repudiandae. Animi minima ut et voluptas veritatis nisi quam. Sapiente sit sequi perspiciatis a nostrum error.",
+      "noticia_txt_foto": "https://placeimg.com/100/100/any?18",
+      "created_at": "2022-03-06T22:41:35.000000Z",
+      "updated_at": "2022-03-06T22:41:35.000000Z",
+      "deleted_at": null,
+      "noticia_bool_ativo": 1,
+      "noticia_tipos": [
+        {
+          "noticiaTipo_int_id": 43,
+          "noticiaTipo_txt_chave": "regional",
+          "noticiaTipo_txt_valor": "Notícias Regionais",
+          "noticiaTipo_bool_ativo": 1,
           "deleted_at": null,
-          "noticia_bool_ativo": 1,
-          "noticia_tipos": [
-              {
-                  "noticiaTipo_int_id": 45,
-                  "noticiaTipo_txt_chave": "internacional",
-                  "noticiaTipo_txt_valor": "Notícias Internacionais",
-                  "noticiaTipo_bool_ativo": 1,
-                  "deleted_at": null,
-                  "created_at": null,
-                  "updated_at": null,
-                  "pivot": {
-                      "noticia_int_id": 147,
-                      "noticiaTipo_int_id": 45
-                  }
-              }
-          ]
-      },
-      {
-          "noticia_int_id": 148,
-          "noticia_txt_titulo": "Est dolores.",
-          "noticia_txt_texto": "Consequatur id recusandae sit numquam. Itaque at ut quo eaque. Numquam veniam mollitia velit suscipit accusantium. Aut sapiente dolorem sequi necessitatibus. At totam pariatur blanditiis dolore soluta enim enim dolores. Rerum magnam dolor et doloremque. Eligendi enim rerum voluptatem dolor eveniet ut illo. Sed iusto et qui voluptas impedit. In blanditiis excepturi quisquam sunt quo voluptatum illo.",
-          "noticia_txt_foto": "https://placeimg.com/100/100/any?85",
-          "created_at": "2022-03-06T22:41:35.000000Z",
-          "updated_at": "2022-03-06T22:41:35.000000Z",
+          "created_at": null,
+          "updated_at": null,
+          "pivot": {
+            "noticia_int_id": 146,
+            "noticiaTipo_int_id": 43
+          }
+        }
+      ]
+    },
+    {
+      "noticia_int_id": 147,
+      "noticia_txt_titulo": "Neque distinctio.",
+      "noticia_txt_texto": "Enim necessitatibus nihil nobis qui dolores ipsum et ut. Ad velit laborum aut. Soluta harum qui repellendus voluptates veritatis nesciunt. Nobis ratione quisquam ut consequuntur odio quibusdam. Ex rerum porro quo nobis consequatur a. Accusantium in cumque unde esse ea molestiae quibusdam ea. Tenetur aut et atque et. Dicta laboriosam ducimus totam qui impedit. Labore cumque hic est optio quia pariatur eos.",
+      "noticia_txt_foto": "https://placeimg.com/100/100/any?44",
+      "created_at": "2022-03-06T22:41:35.000000Z",
+      "updated_at": "2022-03-06T22:41:35.000000Z",
+      "deleted_at": null,
+      "noticia_bool_ativo": 1,
+      "noticia_tipos": [
+        {
+          "noticiaTipo_int_id": 45,
+          "noticiaTipo_txt_chave": "internacional",
+          "noticiaTipo_txt_valor": "Notícias Internacionais",
+          "noticiaTipo_bool_ativo": 1,
           "deleted_at": null,
-          "noticia_bool_ativo": 1,
-          "noticia_tipos": [
-              {
-                  "noticiaTipo_int_id": 43,
-                  "noticiaTipo_txt_chave": "regional",
-                  "noticiaTipo_txt_valor": "Notícias Regionais",
-                  "noticiaTipo_bool_ativo": 1,
-                  "deleted_at": null,
-                  "created_at": null,
-                  "updated_at": null,
-                  "pivot": {
-                      "noticia_int_id": 148,
-                      "noticiaTipo_int_id": 43
-                  }
-              }
-          ]
-      },
-      {
-          "noticia_int_id": 149,
-          "noticia_txt_titulo": "Voluptatem officiis.",
-          "noticia_txt_texto": "Earum aut quos aut harum molestias hic pariatur. Libero non optio ab illo. Et voluptas eius eos veritatis ut atque odio autem. Placeat et animi dolorum porro velit quia necessitatibus suscipit. Autem voluptatem porro totam facere. Nihil sequi tempora voluptatem similique. Omnis hic temporibus doloribus sequi assumenda quaerat porro.",
-          "noticia_txt_foto": "https://placeimg.com/100/100/any?32",
-          "created_at": "2022-03-06T22:41:35.000000Z",
-          "updated_at": "2022-03-06T22:41:35.000000Z",
+          "created_at": null,
+          "updated_at": null,
+          "pivot": {
+            "noticia_int_id": 147,
+            "noticiaTipo_int_id": 45
+          }
+        }
+      ]
+    },
+    {
+      "noticia_int_id": 148,
+      "noticia_txt_titulo": "Est dolores.",
+      "noticia_txt_texto": "Consequatur id recusandae sit numquam. Itaque at ut quo eaque. Numquam veniam mollitia velit suscipit accusantium. Aut sapiente dolorem sequi necessitatibus. At totam pariatur blanditiis dolore soluta enim enim dolores. Rerum magnam dolor et doloremque. Eligendi enim rerum voluptatem dolor eveniet ut illo. Sed iusto et qui voluptas impedit. In blanditiis excepturi quisquam sunt quo voluptatum illo.",
+      "noticia_txt_foto": "https://placeimg.com/100/100/any?85",
+      "created_at": "2022-03-06T22:41:35.000000Z",
+      "updated_at": "2022-03-06T22:41:35.000000Z",
+      "deleted_at": null,
+      "noticia_bool_ativo": 1,
+      "noticia_tipos": [
+        {
+          "noticiaTipo_int_id": 43,
+          "noticiaTipo_txt_chave": "regional",
+          "noticiaTipo_txt_valor": "Notícias Regionais",
+          "noticiaTipo_bool_ativo": 1,
           "deleted_at": null,
-          "noticia_bool_ativo": 1,
-          "noticia_tipos": [
-              {
-                  "noticiaTipo_int_id": 44,
-                  "noticiaTipo_txt_chave": "nacional",
-                  "noticiaTipo_txt_valor": "Notícias Nacionais",
-                  "noticiaTipo_bool_ativo": 1,
-                  "deleted_at": null,
-                  "created_at": null,
-                  "updated_at": null,
-                  "pivot": {
-                      "noticia_int_id": 149,
-                      "noticiaTipo_int_id": 44
-                  }
-              }
-          ]
-      },
-      {
-          "noticia_int_id": 150,
-          "noticia_txt_titulo": "Ut dolorem dolorem.",
-          "noticia_txt_texto": "Architecto ab eos rerum magnam sit veritatis et vel. Qui illum voluptatem harum error. Molestiae magnam eligendi et eum nihil quae dolorem. Quisquam id ea suscipit magnam enim quia. Maxime laboriosam animi provident facilis velit dolorem similique. Dolores deserunt autem ad placeat. Consequuntur occaecati numquam qui illo est corporis qui et. Itaque numquam dolores repellat quod. Aut accusamus pariatur vero. Ipsa illo ea sit eos quasi dolorem. Quia aut consequatur ad maxime facere quam.",
-          "noticia_txt_foto": "https://placeimg.com/100/100/any?71",
-          "created_at": "2022-03-06T22:41:35.000000Z",
-          "updated_at": "2022-03-06T22:41:35.000000Z",
+          "created_at": null,
+          "updated_at": null,
+          "pivot": {
+            "noticia_int_id": 148,
+            "noticiaTipo_int_id": 43
+          }
+        }
+      ]
+    },
+    {
+      "noticia_int_id": 149,
+      "noticia_txt_titulo": "Voluptatem officiis.",
+      "noticia_txt_texto": "Earum aut quos aut harum molestias hic pariatur. Libero non optio ab illo. Et voluptas eius eos veritatis ut atque odio autem. Placeat et animi dolorum porro velit quia necessitatibus suscipit. Autem voluptatem porro totam facere. Nihil sequi tempora voluptatem similique. Omnis hic temporibus doloribus sequi assumenda quaerat porro.",
+      "noticia_txt_foto": "https://placeimg.com/100/100/any?32",
+      "created_at": "2022-03-06T22:41:35.000000Z",
+      "updated_at": "2022-03-06T22:41:35.000000Z",
+      "deleted_at": null,
+      "noticia_bool_ativo": 1,
+      "noticia_tipos": [
+        {
+          "noticiaTipo_int_id": 44,
+          "noticiaTipo_txt_chave": "nacional",
+          "noticiaTipo_txt_valor": "Notícias Nacionais",
+          "noticiaTipo_bool_ativo": 1,
           "deleted_at": null,
-          "noticia_bool_ativo": 1,
-          "noticia_tipos": [
-              {
-                  "noticiaTipo_int_id": 45,
-                  "noticiaTipo_txt_chave": "internacional",
-                  "noticiaTipo_txt_valor": "Notícias Internacionais",
-                  "noticiaTipo_bool_ativo": 1,
-                  "deleted_at": null,
-                  "created_at": null,
-                  "updated_at": null,
-                  "pivot": {
-                      "noticia_int_id": 150,
-                      "noticiaTipo_int_id": 45
-                  }
-              }
-          ]
-      }
+          "created_at": null,
+          "updated_at": null,
+          "pivot": {
+            "noticia_int_id": 149,
+            "noticiaTipo_int_id": 44
+          }
+        }
+      ]
+    },
+    {
+      "noticia_int_id": 150,
+      "noticia_txt_titulo": "Ut dolorem dolorem.",
+      "noticia_txt_texto": "Architecto ab eos rerum magnam sit veritatis et vel. Qui illum voluptatem harum error. Molestiae magnam eligendi et eum nihil quae dolorem. Quisquam id ea suscipit magnam enim quia. Maxime laboriosam animi provident facilis velit dolorem similique. Dolores deserunt autem ad placeat. Consequuntur occaecati numquam qui illo est corporis qui et. Itaque numquam dolores repellat quod. Aut accusamus pariatur vero. Ipsa illo ea sit eos quasi dolorem. Quia aut consequatur ad maxime facere quam.",
+      "noticia_txt_foto": "https://placeimg.com/100/100/any?71",
+      "created_at": "2022-03-06T22:41:35.000000Z",
+      "updated_at": "2022-03-06T22:41:35.000000Z",
+      "deleted_at": null,
+      "noticia_bool_ativo": 1,
+      "noticia_tipos": [
+        {
+          "noticiaTipo_int_id": 45,
+          "noticiaTipo_txt_chave": "internacional",
+          "noticiaTipo_txt_valor": "Notícias Internacionais",
+          "noticiaTipo_bool_ativo": 1,
+          "deleted_at": null,
+          "created_at": null,
+          "updated_at": null,
+          "pivot": {
+            "noticia_int_id": 150,
+            "noticiaTipo_int_id": 45
+          }
+        }
+      ]
+    }
   ]
 }

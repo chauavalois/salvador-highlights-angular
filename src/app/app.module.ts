@@ -13,7 +13,7 @@ import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { HttpClientModule } from '@angular/common/http';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AdminComponent } from './admin/admin.component';
 import { CriarNoticiaComponent } from './admin/criar-noticia/criar-noticia.component';
 import { EditarNoticiaComponent } from './admin/editar-noticia/editar-noticia.component';

@@ -9,7 +9,7 @@ import { INoticia } from '../models/noticias';
 })
 export class NoticiasService {
 
-  url = 'http://localhost:3000/noticias'; // local da api rest fake
+  private endpointBase: string = 'http://localhost:3000/noticias'; // local da api rest fake
 
   // injetando o HttpClient
   constructor(private httpClient: HttpClient) { }
@@ -19,50 +19,47 @@ export class NoticiasService {
     headers: new HttpHeaders({ 'Content-Type': 'application/json' })
   }
 
-  // Obter todas as notícias
+  
   getAllNoticias(): Observable<INoticia[]> {
-    return this.httpClient.get<INoticia[]>(this.url)
+    return this.httpClient.get<INoticia[]>(this.endpointBase)
       .pipe(
         retry(2),
         catchError(this.handleError))
   }
 
-  // Obter uma notícia pelo id
+
+  excluir(id: number): Observable<any>{
+    return this.httpClient.delete<any>(`${this.endpointBase}/${id}`);
+  }
+
+
+  salvarNoticia(noticia: INoticia): Observable<INoticia> {
+    return this.httpClient.post<INoticia>(this.endpointBase, noticia)
+      .pipe(
+        retry(2),
+        catchError(this.handleError)
+      )
+  }
+
+  
+  editarNoticia(noticia: INoticia): Observable<INoticia> {
+    return this.httpClient.put<INoticia>(this.endpointBase + '/' + noticia.noticia_int_id, JSON.stringify(noticia), this.httpOptions)
+      .pipe(
+        retry(1),
+        catchError(this.handleError)
+      )
+  }
+
+  
   getNoticiaById(id: number): Observable<INoticia> {
-    return this.httpClient.get<INoticia>(this.url + '/' + id)
+    return this.httpClient.get<INoticia>(this.endpointBase + '/' + id)
       .pipe(
         retry(2),
         catchError(this.handleError)
       )
   }
 
-  // salvar uma noticia
-  saveNoticia(noticia: INoticia): Observable<INoticia> {
-    return this.httpClient.post<INoticia>(this.url, JSON.stringify(noticia), this.httpOptions)
-      .pipe(
-        retry(2),
-        catchError(this.handleError)
-      )
-  }
-
-  // utualizar uma notícia
-  updateNoticia(noticia: INoticia): Observable<INoticia> {
-    return this.httpClient.put<INoticia>(this.url + '/' + noticia.noticia_int_id, JSON.stringify(noticia), this.httpOptions)
-      .pipe(
-        retry(1),
-        catchError(this.handleError)
-      )
-  }
-
-  // deletar uma notícia
-  deleteNoticia(noticia: INoticia) {
-    return this.httpClient.delete<INoticia>(this.url + '/' + noticia.noticia_int_id, this.httpOptions)
-      .pipe(
-        retry(1),
-        catchError(this.handleError)
-      )
-  }
-
+  
   // Manipulação de erros
   handleError(error: HttpErrorResponse) {
     let errorMessage = '';
