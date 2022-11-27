@@ -1,6 +1,6 @@
 <div class="corpo">
   <div class="container">
-    <form class="formulario" method="post" #frm="ngForm" (ngSubmit)="salvar(criarNoticia)" action="">
+    <form class="formulario" method="post" #frm="ngForm" (ngSubmit)="salvarNoticia(criarNoticia)" action="">
       <p>Preencha todos os campos para criar uma notícia:</p>
       <div class="campo form-group">
         <label>Titulo: </label>
@@ -36,7 +36,7 @@
       </div>
       <div class="campo form-group">
         <input type="button" routerLink="/admin" name="Cancelar" value="Cancelar" class="btn btn-danger">
-        <input [disabled]="frm.invalid" type="submit" name="Salvar" value="Salvar" class="btn btn-primary" (click)="salvar(criarNoticia)">
+        <input [disabled]="frm.invalid" type="submit" name="Salvar" value="Salvar" class="btn btn-primary" (click)="salvarNoticia(criarNoticia)">
       </div>
 
     </form>

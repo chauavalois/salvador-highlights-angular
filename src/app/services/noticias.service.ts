@@ -23,7 +23,6 @@ export class NoticiasService {
   getAllNoticias(): Observable<INoticia[]> {
     return this.httpClient.get<INoticia[]>(this.endpointBase)
       .pipe(
-        retry(2),
         catchError(this.handleError))
   }
 
@@ -33,19 +32,17 @@ export class NoticiasService {
   }
 
 
-  salvarNoticia(noticia: INoticia): Observable<INoticia> {
+  salvar(noticia: INoticia): Observable<INoticia> {
     return this.httpClient.post<INoticia>(this.endpointBase, noticia)
       .pipe(
-        retry(2),
         catchError(this.handleError)
       )
   }
 
   
-  editarNoticia(noticia: INoticia): Observable<INoticia> {
-    return this.httpClient.put<INoticia>(this.endpointBase + '/' + noticia.noticia_int_id, JSON.stringify(noticia), this.httpOptions)
+  editar(noticia: INoticia): Observable<INoticia> {
+    return this.httpClient.put<INoticia>(`${this.endpointBase}/${noticia.noticia_int_id}`,noticia)
       .pipe(
-        retry(1),
         catchError(this.handleError)
       )
   }
@@ -54,7 +51,6 @@ export class NoticiasService {
   getNoticiaById(id: number): Observable<INoticia> {
     return this.httpClient.get<INoticia>(this.endpointBase + '/' + id)
       .pipe(
-        retry(2),
         catchError(this.handleError)
       )
   }

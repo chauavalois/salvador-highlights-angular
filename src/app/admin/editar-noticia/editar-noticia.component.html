@@ -1,42 +1,42 @@
 <div class="corpo">
   <div class="container">
-    <form class="formulario" method="post" #frm="ngForm" (ngSubmit)="salvar(editarNoticia)" action="">
+    <form class="formulario" method="post" #frm="ngForm" (ngSubmit)="editarNoticia(editarNoticiaCapturada)" action="">
       <p>Preencha todos os campos para criar uma notícia:</p>
       <div class="campo form-group">
         <label>Titulo: </label>
-        <input type="text" class="form-control" class="form-control" [(ngModel)]="editarNoticia.noticia_txt_titulo" required>
+        <input type="text" class="form-control" class="form-control" [(ngModel)]="editarNoticiaCapturada.noticia_txt_titulo" required>
       </div>
       <div class="campo form-group">
         <label for="">Texto: </label>
-        <textarea class="form-control" [(ngModel)]="editarNoticia.noticia_txt_texto" required></textarea>
+        <textarea class="form-control" [(ngModel)]="editarNoticiaCapturada.noticia_txt_texto" required></textarea>
       </div>
       <div class="campo form-group">
         <label>Imagem: </label>
-        <input type="text" class="form-control" [(ngModel)]="editarNoticia.noticia_txt_foto">
+        <input type="text" class="form-control" [(ngModel)]="editarNoticiaCapturada.noticia_txt_foto">
       </div>
       <!-- <div class="campo"> 
       <label>Criado em:</label>
-    <input type="text" class="form-control" [(ngModel)]="editarNoticia.created_at">
+    <input type="text" class="form-control" [(ngModel)]="editarNoticiaCapturada.created_at">
   </div>
   <div class="campo">
     <label>Editado em:</label>
-    <input type="text" class="form-control" [(ngModel)]="editarNoticia.updated_at">
+    <input type="text" class="form-control" [(ngModel)]="editarNoticiaCapturada.updated_at">
   </div>
   <div class="campo">
     <label>Deletado em:</label>
-    <input type="text" class="form-control" [(ngModel)]="editarNoticia.deleted_at">
+    <input type="text" class="form-control" [(ngModel)]="editarNoticiaCapturada.deleted_at">
   </div>
   <div class="campo">
     <label>Status</label>
-    <input type="text" class="form-control" [(ngModel)]="editarNoticia.noticia_bool_ativo">
+    <input type="text" class="form-control" [(ngModel)]="editarNoticiaCapturada.noticia_bool_ativo">
   </div> -->
       <div class="campo form-group">
         <label>Tipo: </label>
-        <input type="text" class="form-control" [(ngModel)]="editarNoticia.noticia_tipos" required>
+        <input type="text" class="form-control" [(ngModel)]="editarNoticiaCapturada.noticia_tipos" required>
       </div>
       <div class="campo form-group">
         <input type="button" routerLink="/admin" name="Cancelar" value="Cancelar" class="btn btn-danger">
-        <input [disabled]="frm.invalid" type="submit" name="Salvar" value="Salvar" class="btn btn-primary" (click)="salvar(editarNoticia)">
+        <input [disabled]="frm.invalid" type="submit" name="Salvar" value="Salvar" class="btn btn-primary" (click)="editarNoticia(editarNoticiaCapturada)">
       </div>
 
     </form>

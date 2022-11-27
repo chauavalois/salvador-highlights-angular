@@ -16,19 +16,66 @@ export class AdminComponent implements OnInit {
 
   constructor(private noticiasService: NoticiasService) { }
 
-  public listaNoticias: INoticia[] = []
-  public armazenadorNoticia: INoticia[] = []
+  public listaNoticias: INoticia[] = [];
+  public noticiaAEditar: INoticia = {
+    noticia_int_id: 0,
+    noticia_txt_titulo: "",
+    noticia_txt_texto: "",
+    noticia_txt_foto: "",
+    created_at: "",
+    updated_at: "",
+    deleted_at: "",
+    noticia_bool_ativo: false,
+    noticia_tipos: [
+        {
+            noticiaTipo_int_id: 0,
+            noticiaTipo_txt_chave: "",
+            noticiaTipo_txt_valor: "",
+            noticiaTipo_bool_ativo: false,
+            deleted_at: "",
+            created_at: "",
+            updated_at: "",
+
+        }
+
+    ]
+};
+
 
   ngOnInit(): void {
     this.getNoticias();
   }
 
-  //chama o serviço para obter todos os carros
-
   getNoticias() {
    this.noticiasService.getAllNoticias().subscribe(
     noticias => this.listaNoticias = noticias
     );
+  }
+
+  excluirNoticia(noticiaId: number) {
+    if (confirm('Tem certeza que deseja excluir a notícia?')) {
+      this.noticiasService.excluir(noticiaId).subscribe({
+        next: () => {
+          alert('Excluído com sucesso');
+          this.getNoticias();
+        },
+        error: () => {
+          alert('Erro ao tentar excluir');
+        }
+      });
+    }
+  }
+
+  capturaNoticia(noticia: INoticia){
+    this.noticiaAEditar.noticia_int_id=noticia.noticia_int_id;
+    this.noticiaAEditar.noticia_txt_titulo=noticia.noticia_txt_titulo;
+    this.noticiaAEditar.noticia_txt_texto=noticia.noticia_txt_texto;
+    this.noticiaAEditar.noticia_txt_foto=noticia.noticia_txt_foto;
+    this.noticiaAEditar.created_at=noticia.created_at;
+    this.noticiaAEditar.updated_at=noticia.updated_at;
+    this.noticiaAEditar.deleted_at=noticia.deleted_at;
+    this.noticiaAEditar.noticia_bool_ativo=noticia.noticia_bool_ativo;
+    this.noticiaAEditar.noticia_tipos=noticia.noticia_tipos;
   }
 
   
@@ -46,26 +93,6 @@ export class AdminComponent implements OnInit {
 //   }
 // }
 //  
-
-//  Deletar um carro
-excluirNoticia(noticiaId: number) {
-  if (confirm('Tem certeza que deseja excluir a notícia?')) {
-    this.noticiasService.excluir(noticiaId).subscribe({
-      next: () => {
-        alert('Excluído com sucesso');
-        this.getNoticias();
-      },
-      error: () => {
-        alert('Erro ao tentar excluir');
-      }
-    });
-  }
-}
-
-//  //Copia o carro para ser editado
-//  editNoticia(noticia: INoticia) {
-//   this.noticia = {...noticia };
-//  }
 
 //  //limpar Formulário
 //  cleanForm(form: NgForm) {

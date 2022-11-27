@@ -40,8 +40,8 @@ export class CriarNoticiaComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  salvar(noticia:INoticia) {
-    this.NoticiasService.salvarNoticia(noticia).subscribe({
+  salvarNoticia(noticia: INoticia) {
+    this.NoticiasService.salvar(noticia).subscribe({
       next: () =>{
         alert('Noticia salva com sucesso');
         // this.getNoticias();
@@ -50,7 +50,7 @@ export class CriarNoticiaComponent implements OnInit {
       error: () => {
         alert('Erro ao tentar salvar')
       }
-    })
+    });
   }
  
 

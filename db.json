@@ -22,19 +22,6 @@
             "noticia_int_id": 121,
             "noticiaTipo_int_id": 43
           }
-        },
-        {
-          "noticiaTipo_int_id": 44,
-          "noticiaTipo_txt_chave": "nacional",
-          "noticiaTipo_txt_valor": "Notícias Nacionais",
-          "noticiaTipo_bool_ativo": 1,
-          "deleted_at": null,
-          "created_at": null,
-          "updated_at": null,
-          "pivot": {
-            "noticia_int_id": 121,
-            "noticiaTipo_int_id": 44
-          }
         }
       ]
     },
