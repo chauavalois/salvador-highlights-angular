@@ -17,6 +17,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AdminComponent } from './admin/admin.component';
 import { CriarNoticiaComponent } from './admin/criar-noticia/criar-noticia.component';
 import { EditarNoticiaComponent } from './admin/editar-noticia/editar-noticia.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { EditarNoticiaComponent } from './admin/editar-noticia/editar-noticia.co
     AdminComponent,
     CriarNoticiaComponent,
     EditarNoticiaComponent,
+    LoginComponent,
     ],
   imports: [
     BrowserModule,
