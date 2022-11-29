@@ -1,7 +1,7 @@
 <div class="corpo">
   <div class="container">
     <form class="formulario" method="post" #frm="ngForm" (ngSubmit)="editarNoticia(editarNoticiaCapturada)" action="">
-      <p>Preencha todos os campos para criar uma notícia:</p>
+      <p>Preencha todos os campos para editar uma notícia:</p>
       <div class="campo form-group">
         <label>Titulo: </label>
         <input type="text" class="form-control" class="form-control" [(ngModel)]="editarNoticiaCapturada.noticia_txt_titulo" required>

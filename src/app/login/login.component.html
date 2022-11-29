@@ -1,1 +1,20 @@
-<p>login works!</p>
+<div class="corpo">
+    <div class="container">
+      <form class="formulario" method="post" #frm="ngForm" (ngSubmit)="logar(usuario)" action="">
+        <p>Digite seu login e senha:</p>
+        <div class="campo form-group">
+          <label>Login: </label>
+          <input type="text" class="form-control" class="form-control" [(ngModel)]="usuario.login" required>
+        </div>
+        <div class="campo form-group">
+          <label for="">Senha: </label>
+          <input class="form-control" [(ngModel)]="usuario.senha" required>
+        </div>
+        
+        <div class="campo form-group">
+          <input [disabled]="frm.invalid" type="submit" name="Entrar" value="Entrar" class="btn btn-primary" (click)="logar(usuario)">
+        </div>
+  
+      </form>
+    </div>
+  </div>
