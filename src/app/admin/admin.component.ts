@@ -17,6 +17,9 @@ export class AdminComponent implements OnInit {
   constructor(private noticiasService: NoticiasService) { }
 
   public listaNoticias: INoticia[] = [];
+  //preciso saber como usar a variável noticiaAEditar no component.ts do editar_noticia, pra usar ela pra preencher o formulário  
+  //de edição e a medida que o usuário for editando, ela vai armazenando e quando o usuário clicar em salvar edições, acionará 
+  //um método em seu TS que acionará o service que acionará o http client para salvar as alterações
   public noticiaAEditar: INoticia = {
     noticia_int_id: 0,
     noticia_txt_titulo: "",
