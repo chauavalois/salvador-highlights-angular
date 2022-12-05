@@ -68,6 +68,9 @@ export class AdminComponent implements OnInit {
       });
     }
   }
+//ainda temos que colocar o método abaixo no botão editar, para quando o usuário clicar no botão, o método captura as informações
+// da noticia em questão e transfere esses dados para a variável noticiaAEditar. Ao mesmo tempo em que o método é acionado, o usuário 
+// é direcionado para a página de edição e lá teremos a variável noticiaAEditar preenchendo o formulário através do two way data binding
 
   capturaNoticia(noticia: INoticia){
     this.noticiaAEditar.noticia_int_id=noticia.noticia_int_id;

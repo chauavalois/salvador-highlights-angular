@@ -46,6 +46,9 @@ export class CriarNoticiaComponent implements OnInit {
         alert('Noticia salva com sucesso');
         // this.getNoticias();
         // this.criarNoticia = new INoticia();
+
+        //Ao fim da execução, Além de reiniciar a váriável criarNoticia, o método deve redirecionar o usuário para o 
+        //dashboard administrativo
       },
       error: () => {
         alert('Erro ao tentar salvar')
