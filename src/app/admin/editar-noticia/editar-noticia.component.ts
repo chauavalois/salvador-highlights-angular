@@ -42,6 +42,8 @@ editarNoticia(noticia:INoticia) {
       alert('Edições salvas com sucesso');
       // this.getNoticias();
       // this.criarNoticia = new INoticia();
+      
+      // ao fim da execução, vamos redirecionar o usuário para a pagina administrativa
     },
     error: () => {
       alert('Erro ao tentar editar');

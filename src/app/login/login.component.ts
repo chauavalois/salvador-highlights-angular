@@ -22,6 +22,7 @@ export class LoginComponent implements OnInit {
   logar(usuario:IUsuario) {
     // criação de método que irá acionar um serviço para receber a variável login, contendo login e senha. O serviço irá 
     // até o banco de dados verificar se existe um uruário condizente com as informações trazidas
+    // teremos que criar um serviço especifico para o login. a pergunta é, podemos usar o mesmo banco de dados onde estão as noticias?
   }
 
 }
