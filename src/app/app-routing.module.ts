@@ -21,6 +21,7 @@ const routes: Routes = [
   {path: 'admin', component: AdminComponent},
   {path: 'criar-noticia', component: CriarNoticiaComponent},
   {path: 'editar-noticia', component: EditarNoticiaComponent},
+  {path: 'editar-noticia/:id', component: EditarNoticiaComponent},
   {path: 'login', component: LoginComponent},
 
 

@@ -35,13 +35,13 @@
             <td>{{noticia.noticia_txt_titulo}}</td>
             <td>{{noticia.noticia_txt_texto}}</td>
             <td>{{noticia.noticia_txt_foto}}</td>
-            <td>{{noticia.created_at}}</td>
-            <td>{{noticia.updated_at}}</td>
-            <td>{{noticia.deleted_at}}</td>
-            <td>{{noticia.noticia_bool_ativo}}</td>
-            <td>{{noticia.noticia_tipos}}</td>
+            <td>{{noticia.created_at | date}}</td>
+            <td>{{noticia.updated_at | date}}</td>
+            <td>{{noticia.deleted_at | date}}</td>
+            <td>{{noticia.noticia_bool_ativo ? "ativo" : "desativado"}}</td>
+            <td><p *ngFor="let tipo of noticia.noticia_tipos">{{tipo.noticiaTipo_txt_valor}}</p></td>
             <td>
-              <a routerLink="/editar-noticia"><button class="btn btn-primary mr-2">Editar</button></a>
+              <a routerLink="/editar-noticia/{{noticia.noticia_int_id}}"><button class="btn btn-primary mr-2">Editar</button></a>
               <button (click)="excluirNoticia(noticia.noticia_int_id)" class="btn btn-danger">Excluir</button>
             </td>
           </tr>

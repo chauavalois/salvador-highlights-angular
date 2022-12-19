@@ -1,20 +1,43 @@
 <div class="corpo">
   <div class="container">
-    <form class="formulario" method="post" #frm="ngForm" (ngSubmit)="editarNoticia(editarNoticiaCapturada)" action="">
+    <form
+      class="formulario"
+      method="post"
+      #frm="ngForm"
+      (ngSubmit)="editarNoticia(editarNoticiaCapturada)"
+      action=""
+    >
       <p>Preencha todos os campos para editar uma notícia:</p>
       <div class="campo form-group">
         <label>Titulo: </label>
-        <input type="text" class="form-control" class="form-control" [(ngModel)]="editarNoticiaCapturada.noticia_txt_titulo" required>
+        <input
+          type="text"
+          class="form-control"
+          class="form-control"
+          name="noticia_txt_titulo"
+          [(ngModel)]="editarNoticiaCapturada.noticia_txt_titulo"
+          required
+        />
       </div>
       <div class="campo form-group">
         <label for="">Texto: </label>
-        <textarea class="form-control" [(ngModel)]="editarNoticiaCapturada.noticia_txt_texto" required></textarea>
+        <textarea
+          name="noticia_txt_texto"
+          class="form-control"
+          [(ngModel)]="editarNoticiaCapturada.noticia_txt_texto"
+          required
+        ></textarea>
       </div>
       <div class="campo form-group">
         <label>Imagem: </label>
-        <input type="text" class="form-control" [(ngModel)]="editarNoticiaCapturada.noticia_txt_foto">
+        <input
+          name="noticia_txt_foto"
+          type="text"
+          class="form-control"
+          [(ngModel)]="editarNoticiaCapturada.noticia_txt_foto"
+        />
       </div>
-      <!-- <div class="campo"> 
+      <!-- <div class="campo">
       <label>Criado em:</label>
     <input type="text" class="form-control" [(ngModel)]="editarNoticiaCapturada.created_at">
   </div>
@@ -32,13 +55,34 @@
   </div> -->
       <div class="campo form-group">
         <label>Tipo: </label>
-        <input type="text" class="form-control" [(ngModel)]="editarNoticiaCapturada.noticia_tipos" required>
+        <ng-select
+          [items]="tiposNoticia"
+          bindLabel="noticiaTipo_txt_valor"
+          bindValue="noticiaTipo_int_id"
+          name="noticia_tipos"
+          [multiple]="true"
+          [(ngModel)]="bindTipos"
+          required
+        >
+        </ng-select>
       </div>
       <div class="campo form-group">
-        <input type="button" routerLink="/admin" name="Cancelar" value="Cancelar" class="btn btn-danger">
-        <input [disabled]="frm.invalid" type="submit" name="Salvar" value="Salvar" class="btn btn-primary" (click)="editarNoticia(editarNoticiaCapturada)">
+        <input
+          type="button"
+          routerLink="/admin"
+          name="Cancelar"
+          value="Cancelar"
+          class="btn btn-danger"
+        />
+        <input
+          [disabled]="frm.invalid"
+          type="submit"
+          name="Salvar"
+          value="Salvar"
+          class="btn btn-primary"
+          (click)="editarNoticia(editarNoticiaCapturada)"
+        />
       </div>
-
     </form>
   </div>
 </div>

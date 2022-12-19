@@ -18,6 +18,7 @@ import { AdminComponent } from './admin/admin.component';
 import { CriarNoticiaComponent } from './admin/criar-noticia/criar-noticia.component';
 import { EditarNoticiaComponent } from './admin/editar-noticia/editar-noticia.component';
 import { LoginComponent } from './login/login.component';
+import { NgSelectModule } from '@ng-select/ng-select';
 
 @NgModule({
   declarations: [
@@ -35,6 +36,7 @@ import { LoginComponent } from './login/login.component';
     ],
   imports: [
     BrowserModule,
+    NgSelectModule,
     AppRoutingModule,
     HomeModule,
     HttpClientModule,

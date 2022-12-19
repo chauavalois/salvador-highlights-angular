@@ -750,5 +750,34 @@
         }
       ]
     }
+  ],
+  "noticiasTipos": [
+    {
+      "noticiaTipo_int_id": 43,
+      "noticiaTipo_txt_chave": "regional",
+      "noticiaTipo_txt_valor": "Notícias Regionais",
+      "noticiaTipo_bool_ativo": 1,
+      "deleted_at": null,
+      "created_at": null,
+      "updated_at": null
+    },
+    {
+      "noticiaTipo_int_id": 44,
+      "noticiaTipo_txt_chave": "nacional",
+      "noticiaTipo_txt_valor": "Notícias Nacionais",
+      "noticiaTipo_bool_ativo": 1,
+      "deleted_at": null,
+      "created_at": null,
+      "updated_at": null
+    },
+    {
+      "noticiaTipo_int_id": 45,
+      "noticiaTipo_txt_chave": "internacional",
+      "noticiaTipo_txt_valor": "Notícias Internacionais",
+      "noticiaTipo_bool_ativo": 1,
+      "deleted_at": null,
+      "created_at": null,
+      "updated_at": null
+    }
   ]
 }
