@@ -9,8 +9,8 @@ import { INoticia, INoticiaTipo } from '../models/noticias';
 })
 export class NoticiasService {
 
-  private endpointBase: string = 'http://localhost:3003/noticias'; // local da api rest fake
-  private endpointBaseTipo: string = 'http://localhost:3003/noticiasTipos'; // local da api rest fake
+  private endpointBase: string = 'http://localhost:3030/noticias'; // local da api rest fake
+  private endpointBaseTipo: string = 'http://localhost:3030/noticiasTipos'; // local da api rest fake
 
   // injetando o HttpClient
   constructor(private httpClient: HttpClient) { }
@@ -26,14 +26,6 @@ export class NoticiasService {
       .pipe(
         catchError(this.handleError))
   }
-
-
-  getAllNoticiasTipos(): Observable<INoticiaTipo[]> {
-    return this.httpClient.get<INoticiaTipo[]>(this.endpointBaseTipo)
-      .pipe(
-        catchError(this.handleError))
-  }
-
 
   excluir(id: number): Observable<any>{
     return this.httpClient.delete<any>(`${this.endpointBase}/${id}`);
@@ -61,6 +53,12 @@ export class NoticiasService {
       .pipe(
         catchError(this.handleError)
       )
+  }
+
+  getAllNoticiasTipos(): Observable<INoticiaTipo[]> {
+    return this.httpClient.get<INoticiaTipo[]>(this.endpointBaseTipo)
+      .pipe(
+        catchError(this.handleError))
   }
 
 

@@ -19,7 +19,7 @@ const routes: Routes = [
   {path: 'noticias-internacionais', component: NoticiasInternacionaisComponent},
   {path: 'contatos', component: ContatosComponent},
   {path: 'admin', component: AdminComponent},
-  {path: 'criar-noticia', component: CriarNoticiaComponent},
+  {path: 'criar-noticia', component: EditarNoticiaComponent},
   {path: 'editar-noticia', component: EditarNoticiaComponent},
   {path: 'editar-noticia/:id', component: EditarNoticiaComponent},
   {path: 'login', component: LoginComponent},

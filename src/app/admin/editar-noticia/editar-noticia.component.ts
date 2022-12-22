@@ -24,7 +24,7 @@ export class EditarNoticiaComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.buscarNoticiaById();
+    if (this.paramId) this.buscarNoticiaById(this.paramId);
     this.buscarTiposNoticia();
   }
 
@@ -39,24 +39,45 @@ export class EditarNoticiaComponent implements OnInit {
     noticia_bool_ativo: false,
   };
 
-  buscarNoticiaById() {
-    if (this.paramId) {
-      this.NoticiasService.getNoticiaById(this.paramId).subscribe(
-        (noticia: INoticia[]) => {
-          this.editarNoticiaCapturada = noticia[0];
-          this.bindTipos = this.editarNoticiaCapturada.noticia_tipos!.map(t => t.noticiaTipo_int_id);
-        }
+  buscarNoticiaById(id: number) {
+    this.NoticiasService.getNoticiaById(id).subscribe((noticia: INoticia[]) => {
+      this.editarNoticiaCapturada = noticia[0];
+
+      this.bindTipos = this.editarNoticiaCapturada.noticia_tipos!.map(
+        (t) => t.noticiaTipo_int_id
       );
-    }
+    });
+  }
+
+  visualizarBindTipos() {
+    console.log(this.bindTipos);
   }
 
   buscarTiposNoticia() {
     this.NoticiasService.getAllNoticiasTipos().subscribe(
       (tipos: INoticiaTipo[]) => {
-        console.log(tipos);
         this.tiposNoticia = tipos;
       }
     );
+  }
+
+  salvar() {
+    if (!this.paramId) {
+      this.salvarNoticia(this.editarNoticiaCapturada);
+    } else {
+      this.editarNoticia(this.editarNoticiaCapturada);
+    }
+  }
+
+  salvarNoticia(noticia: INoticia) {
+    this.NoticiasService.salvar(noticia).subscribe({
+      next: () => {
+        alert('Noticia salva com sucesso');
+      },
+      error: () => {
+        alert('Erro ao tentar salvar');
+      },
+    });
   }
 
   editarNoticia(noticia: INoticia) {
