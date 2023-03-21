@@ -1,13 +1,8 @@
-export interface INoticia {
-  noticia_int_id: number;
-  noticia_txt_titulo: string;
-  noticia_txt_texto: string;
-  noticia_txt_foto: string;
-  created_at: string | Date;
-  updated_at: string | Date;
-  deleted_at: string | Date;
-  noticia_bool_ativo: boolean;
-  noticia_tipos?: INoticiaTipo[];
+export class INoticia {
+  public id!: number;
+  public title!: string;
+  public description!: string;
+  public hour!: string;
 }
 
 export interface INoticiaTipo {

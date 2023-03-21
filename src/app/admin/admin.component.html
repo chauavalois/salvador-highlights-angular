@@ -1,52 +1,112 @@
-<div class="container-fluid">
-  <div class="row">
-    <div class="col-md-12">
-      <h2>
-        Administração Salvador Highlights
-      </h2>
-      <!-- <small class="text mutted">Criar, buscar, atualizar e deletar notícias</small> -->
+
+<div >
+  <div >
+    <div class="display-5">Criar Notícia</div>
+    <div class="cria-tarefa mt-4  col-lg-auto">
+      <div class="row bg-dark rounded py-3">
+        <div class="col-lg-3 d-flex justify-content-center">
+          <label class="text-light w-100">
+            Título
+            <input class="w-100" [(ngModel)]="novaNoticia.title">
+          </label>
+        </div>
+        <div class="col-lg-3 d-flex justify-content-center">
+          <label class="text-light w-100">
+            Descrição
+            <input class="w-100" [(ngModel)]="novaNoticia.description">
+          </label>
+        </div>
+        <div class="col-lg-3 d-flex justify-content-center">
+          <label class="text-light w-100">
+            Data e hora
+            <input class="w-100" [(ngModel)]="novaNoticia.hour" type="datetime-local">
+          </label>
+        </div>
+        <div class="col-lg-3 d-flex justify-content-center align-items-center">
+          <button class="btn btn-primary btn-lg" role="button" (click)="savenoticia(novaNoticia)">
+            Salvar nova tarefa
+          </button>
+        </div>
+      </div>
     </div>
   </div>
-  <div class="row">
-    <div class="col-md-6">
-      <a><button type="button" class="btn btn-primary float-right" routerLink="/criar-noticia">Criar Notícia</button></a>
+  <div class="container">
+    <div class="lista-tarefas mt-5">
+      <div class="row">
+        <div class="col-lg-12">
+          <h3 class="display-5 mt-1">Lista de Noticias</h3>
+        </div>
+        <div class="col-lg-12">
+          <table class="table table-hover h-auto">
+            <thead class="p-3 mb-2 bg-dark text-white">
+              <tr>
+                <th scope="col" class="align-middle">#</th>
+                <th scope="col" class="align-middle">Título</th>
+                <th scope="col" class="align-middle">Descrição</th>
+                <th scope="col" class="align-middle">Data e hora</th>
+                <th scope="col" class="align-middle"></th>
+              </tr>
+            </thead>
+            <tbody class="p-3 mb-2 bg-light text-dark">
+              <tr *ngFor="let noticia of listaNoticias; let i = index">
+                <th scope="row">{{i+1}}</th>
+                <td>{{noticia.title}}</td>
+                <td>{{noticia.description}}</td>
+                <td>{{noticia.hour | date:'d/MM/y H:mm' }}</td>
+                <td class="d-flex justify-content-end">
+                  <button (click)="capturaNoticia(noticia)" class="btn btn-primary mr-2" data-toggle="modal"
+                    data-target="#modalEdit">Editar</button>
+                  <button (click)="excluirNoticia(noticia.id)" class="btn btn-danger">Excluir</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
     </div>
   </div>
-  <div class="row">
-    <div class="col-md-6">
-      <table class="table table-hover">
-        <thead>
-          <tr>
-            <th scope="col" class="coluna-indice">#</th>
-            <th scope="col" class="ColunaTitulo">Título</th>
-            <th scope="col" class="ColunaTexto">Texto</th>
-            <th scope="col" class="ColunaFoto">Foto</th>
-            <th scope="col" class="ColunaCriado">Criado em:</th>
-            <th scope="col" class="ColunaAtualizado">Atualizado em:</th>
-            <th scope="col" class="ColunaDeletado">Deletado em:</th>
-            <th scope="col" class="ColunaStatus">Status</th>
-            <th scope="col" class="ColunaTipo">Tipo</th>
-            <th scope="col" class="ColunaBotoes"></th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr *ngFor="let noticia of listaNoticias; let i = index">
-            <td>{{i+1}}</td>
-            <td>{{noticia.noticia_txt_titulo}}</td>
-            <td>{{noticia.noticia_txt_texto}}</td>
-            <td>{{noticia.noticia_txt_foto}}</td>
-            <td>{{noticia.created_at | date}}</td>
-            <td>{{noticia.updated_at | date}}</td>
-            <td>{{noticia.deleted_at | date}}</td>
-            <td>{{noticia.noticia_bool_ativo ? "ativo" : "desativado"}}</td>
-            <td><p *ngFor="let tipo of noticia.noticia_tipos">{{tipo.noticiaTipo_txt_valor}}</p></td>
-            <td>
-              <a routerLink="/editar-noticia/{{noticia.noticia_int_id}}"><button class="btn btn-primary mr-2">Editar</button></a>
-              <button (click)="excluirNoticia(noticia.noticia_int_id)" class="btn btn-danger">Excluir</button>
-            </td>
-          </tr>
-        </tbody>
-      </table>
+</div>
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="modalEdit" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Editar Noticia</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="row ">
+          <div class="col-12">
+            <label class="w-100">
+              Título
+              <input class="form-control" [(ngModel)]="noticiaAEditar.title">
+            </label>
+          </div>
+          <div class="col-12">
+            <label class="w-100">
+              Descrição
+              <input class="form-control" [(ngModel)]="noticiaAEditar.description">
+            </label>
+          </div>
+          <div class="col-12">
+            <label class="w-100">
+              Data e Hora
+              <input class="form-control" type="datetime-local" [(ngModel)]="noticiaAEditar.hour">
+            </label>
+          </div>
+        </div>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" #closeModal class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+        <button type="button" class="btn btn-primary" (click)="savenoticia(noticiaAEditar)">Salvar edições</button>
+      </div>
     </div>
   </div>
 </div>

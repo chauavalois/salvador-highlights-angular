@@ -9,8 +9,8 @@ import { INoticia, INoticiaTipo } from '../models/noticias';
 })
 export class NoticiasService {
 
-  private endpointBase: string = 'http://localhost:3030/noticias'; // local da api rest fake
-  private endpointBaseTipo: string = 'http://localhost:3030/noticiasTipos'; // local da api rest fake
+  private endpointBase: string = 'http://localhost:3000/noticias'; // local da api rest fake
+  private endpointBaseTipo: string = 'http://localhost:3000/noticiasTipos'; // local da api rest fake
 
   // injetando o HttpClient
   constructor(private httpClient: HttpClient) { }
@@ -41,7 +41,7 @@ export class NoticiasService {
 
 
   editar(noticia: INoticia): Observable<INoticia> {
-    return this.httpClient.put<INoticia>(`${this.endpointBase}/${noticia.noticia_int_id}`,noticia)
+    return this.httpClient.put<INoticia>(`${this.endpointBase}/${noticia.id}`,noticia)
       .pipe(
         catchError(this.handleError)
       )
