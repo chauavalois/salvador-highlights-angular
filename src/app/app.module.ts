@@ -13,7 +13,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AdminComponent } from './admin/admin.component';
 import { LoginComponent } from './login/login.component';
-import { NgSelectModule } from '@ng-select/ng-select';
+// import { NgSelectModule } from '@ng-select/ng-select';
 
 @NgModule({
   declarations: [
@@ -26,7 +26,7 @@ import { NgSelectModule } from '@ng-select/ng-select';
     ],
   imports: [
     BrowserModule,
-    NgSelectModule,
+    // NgSelectModule,
     AppRoutingModule,
     HomeModule,
     HttpClientModule,
