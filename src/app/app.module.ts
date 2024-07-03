@@ -13,6 +13,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AdminComponent } from './admin/admin.component';
 import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
 // import { NgSelectModule } from '@ng-select/ng-select';
 
 @NgModule({
@@ -23,6 +24,7 @@ import { LoginComponent } from './login/login.component';
     FooterComponent,
     AdminComponent,
     LoginComponent,
+    RegisterComponent,
     ],
   imports: [
     BrowserModule,
