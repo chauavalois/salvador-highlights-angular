@@ -1,0 +1,58 @@
+.register-container {
+    width: 300px;
+    padding: 20px;
+    background-color: black;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: auto;
+    margin-top: 100px; /* Ajuste conforme necessário para centralizar verticalmente */
+  }
+  
+  .register-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #cb7b03; // Laranja
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #cb7b03; // Laranja
+  }
+  
+  .form-group input[type="text"],
+  .form-group input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    outline: none;
+  }
+  
+  .form-group button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #615f5f; /* Cor diferente dos inputs */
+    color: #cb7b03; /* Mesma cor do título login */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .form-group button[type="submit"]:hover {
+    background-color: #555353; /* Cor de hover diferente */
+  }
+  
+  .error-message {
+    color: red;
+    text-align: center;
+    margin-top: 10px;
+  }
+  
