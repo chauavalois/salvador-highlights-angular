@@ -1,15 +1,19 @@
 {
   "users": [
-    { "id": 1, "username": "user1", "password": "pass1", "token": "token123" }
-  ],
-  
-  "noticias": [
     {
-      "id": "8",
-      "title": "compras de mercado",
-      "description": "incluir frutas e verduras",
-      "hour": "2022-09-20T10:30"
+      "id": 1,
+      "username": "user1",
+      "password": "pass1",
+      "token": "token123"
     },
+    {
+      "id": 2,
+      "username": "admin@hotmail.com",
+      "password": "123456",
+      "token": "token2"
+    }
+  ],
+  "noticias": [
     {
       "id": "9",
       "title": "estudar",
@@ -27,6 +31,12 @@
       "title": "morreu pelé",
       "description": "o rei do futebol",
       "hour": "esquerda"
+    },
+    {
+      "title": "donks lança novo single",
+      "description": "em salvador todos não param de ouvir a nova musica do donk",
+      "hour": "direita",
+      "id": "VElJ7pn"
     }
   ]
 }
