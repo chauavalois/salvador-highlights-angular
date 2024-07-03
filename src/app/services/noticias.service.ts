@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient, HttpErrorResponse, HttpHeaders } from '@angular/common/http';
 import { Observable, throwError } from 'rxjs';
 import { retry, catchError } from 'rxjs/operators';
-import { INoticia } from '../models/noticias';
+import { INoticia, INoticiaTipo } from '../models/noticias';
 
 @Injectable({
   providedIn: 'root'
@@ -10,6 +10,7 @@ import { INoticia } from '../models/noticias';
 export class NoticiasService {
 
   private endpointBase: string = 'http://localhost:3000/noticias'; // local da api rest fake
+  private endpointBaseTipo: string = 'http://localhost:3000/noticiasTipos'; // local da api rest fake
 
   // injetando o HttpClient
   constructor(private httpClient: HttpClient) { }
@@ -19,13 +20,12 @@ export class NoticiasService {
     headers: new HttpHeaders({ 'Content-Type': 'application/json' })
   }
 
-  
+
   getAllNoticias(): Observable<INoticia[]> {
     return this.httpClient.get<INoticia[]>(this.endpointBase)
       .pipe(
         catchError(this.handleError))
   }
-
 
   excluir(id: number): Observable<any>{
     return this.httpClient.delete<any>(`${this.endpointBase}/${id}`);
@@ -39,23 +39,29 @@ export class NoticiasService {
       )
   }
 
-  
+
   editar(noticia: INoticia): Observable<INoticia> {
-    return this.httpClient.put<INoticia>(`${this.endpointBase}/${noticia.noticia_int_id}`,noticia)
+    return this.httpClient.put<INoticia>(`${this.endpointBase}/${noticia.id}`,noticia)
       .pipe(
         catchError(this.handleError)
       )
   }
 
-  
-  getNoticiaById(id: number): Observable<INoticia> {
-    return this.httpClient.get<INoticia>(this.endpointBase + '/' + id)
+
+  getNoticiaById(id: number): Observable<INoticia[]> {
+    return this.httpClient.get<INoticia[]>(`${this.endpointBase}?noticia_int_id=${id}`)
       .pipe(
         catchError(this.handleError)
       )
   }
 
-  
+  getAllNoticiasTipos(): Observable<INoticiaTipo[]> {
+    return this.httpClient.get<INoticiaTipo[]>(this.endpointBaseTipo)
+      .pipe(
+        catchError(this.handleError))
+  }
+
+
   // Manipulação de erros
   handleError(error: HttpErrorResponse) {
     let errorMessage = '';

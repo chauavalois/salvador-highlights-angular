@@ -1,28 +1,28 @@
-import { Component, OnInit } from '@angular/core';
-import { IUsuario } from '../models/login';
+// src/app/login/login.component.ts
+
+import { Component } from '@angular/core';
+import { Router } from '@angular/router';
+import { AuthService } from '../services/auth.service';
 
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.scss']
 })
-export class LoginComponent implements OnInit {
+export class LoginComponent {
+  username = '';
+  password = '';
+  loginError = false;
 
-  constructor() { }
+  constructor(private authService: AuthService, private router: Router) {}
 
-  public usuario : IUsuario = {
-    id:0,
-    login:"",
-    senha:""
+  onSubmit() {
+    this.authService.login(this.username, this.password).subscribe(isLoggedIn => {
+      if (isLoggedIn) {
+        this.router.navigate(['/admin']); // Redireciona para a página administrativa após o login
+      } else {
+        this.loginError = true; // Exibir mensagem de erro de login
+      }
+    });
   }
-
-  ngOnInit(): void {
-  }
-
-  logar(usuario:IUsuario) {
-    // criação de método que irá acionar um serviço para receber a variável login, contendo login e senha. O serviço irá 
-    // até o banco de dados verificar se existe um uruário condizente com as informações trazidas
-    // teremos que criar um serviço especifico para o login. a pergunta é, podemos usar o mesmo banco de dados onde estão as noticias?
-  }
-
 }
