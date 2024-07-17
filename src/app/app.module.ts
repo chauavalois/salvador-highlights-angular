@@ -11,9 +11,14 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { AdminComponent } from './admin/admin.component';
+import { AdminDashboardComponent } from './admin/admin.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
+import { NoticiasComponent } from './noticias/noticias.component';
+import { UserListComponent } from './user-list/user-list.component';
+import { EditAboutComponent } from './edit-about/edit-about.component';
+import { EditHomeComponent } from './edit-home/edit-home.component';
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
   declarations: [
@@ -21,9 +26,14 @@ import { RegisterComponent } from './register/register.component';
     ContatosComponent,
     HeaderComponent,
     FooterComponent,
-    AdminComponent,
+    AdminDashboardComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    NoticiasComponent,
+    UserListComponent,
+    EditAboutComponent,
+    EditHomeComponent,
+    AboutComponent
     ],
   imports: [
     BrowserModule,
