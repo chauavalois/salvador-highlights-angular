@@ -8,16 +8,19 @@
     </a>
     <ul class="menu-principal nav col-12 col-lg-auto mb-3 mb-lg-0">
       <li class="nav-item">
-        <a routerLink="/" class="nav-link" aria-current="page">Início</a>
+        <a routerLink="/" class="nav-link" aria-current="page">Home</a>
+      </li>
+      <li class="nav-item">
+        <a routerLink="/about" class="nav-link">Sobre</a>
       </li>
       <li class="nav-item">
         <a routerLink="/contatos" class="nav-link">Contatos</a>
         
       </li>
-      <li class="nav-item">
-        <a routerLink="/admin" class="nav-link"
-          >Admin</a>
-      </li>
+      <!-- <li class="nav-item" *ngIf="isAdmin">
+        <a routerLink="/admin" class="nav-link">Admin</a>
+      </li> --> 
+      <!-- mesmo sem comentar, o link admin não estava aparecendo para nenhum tipo de usuário após a modificação para que ele somente aparecesse aos usuários logados. -->
       <li class="nav-item">
         <a routerLink="/login" class="nav-link"
           >login</a>
