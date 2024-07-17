@@ -7,6 +7,7 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin: auto;
     margin-top: 100px; /* Ajuste conforme necessário para centralizar verticalmente */
+    color: #615f5f;
   }
   
   .login-container h2 {
@@ -15,6 +16,11 @@
     color: #cb7b03; // Laranja
   }
   
+  .login-container a {
+    color: gray; // Laranja
+    margin-left: 45px;
+  }
+
   .form-group {
     margin-bottom: 15px;
   }
@@ -49,6 +55,7 @@
 .form-group button[type="submit"]:hover {
     background-color: #555353; /* Cor de hover diferente */
 }
+
   
 
 
